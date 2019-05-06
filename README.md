@@ -1,8 +1,6 @@
 # PetfinderV2
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/petfinder_V2`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Wrapper for the <a href="https://www.petfinder.com/developers/v2/docs/" target="_blank">Petfinder V2 API</a>
 
 ## Installation
 
@@ -24,16 +22,16 @@ Or install it yourself as:
 
 ```ruby
 # configure the client globally
-PetfinderV2::Config.set(client_id: CLIENT_ID, client_secret: CLIENT_SECRET)
+PetfinderV2::Config.set(CLIENT_ID, CLIENT_SECRET)
 client = PetfinderV2::Client.new
 
 # or per client instance
-client = PetfinderV2::Client.new(CLIENT_ID, CLIENT_SECRET, global_config = {})
+client = PetfinderV2::Client.new(CLIENT_ID, CLIENT_SECRET)
 
 options = {
-  age: [ :adult, :senior ],
-  gender: :female,
-  size: [ :medium, :large ]
+  age: [ 'adult', 'senior' ],
+  gender: 'female',
+  size: [ 'medium', 'large' ]
 }
 result = client.search_animals(options)
 ```
