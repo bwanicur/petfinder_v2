@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.petfinder.com/v2/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '608'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 06 May 2019 01:20:27 GMT
+      X-Amzn-Requestid:
+      - 21a1eff6-6f9d-11e9-b568-bfe18a367ee7
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '608'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZPLKUEy-oAMF6FA=
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-store, private
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Mon, 06 May 2019 01:20:27 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 40ddfb9607f5d49c286c41e9afdce772.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - beNFW9DPbDG9MP1OCmOEs1CWlAZ-5fTDkMdTETAf3LIrvulw09CaRA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImIxZjljNzhjNGIzZDY3NmRiMzM2ZDIzMmRkNDE0ZTg1OTNjZTllOWUzODg2MDVjNzlmMTY4YzMzZTk0Nzk2MjY5NmRkMTM1OGEzZGYzZWZlIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImIxZjljNzhjNGIzZDY3NmRiMzM2ZDIzMmRkNDE0ZTg1OTNjZTllOWUzODg2MDVjNzlmMTY4YzMzZTk0Nzk2MjY5NmRkMTM1OGEzZGYzZWZlIiwiaWF0IjoxNTU3MTA1NjI3LCJuYmYiOjE1NTcxMDU2MjcsImV4cCI6MTU1NzEwOTIyNywic3ViIjoiIiwic2NvcGVzIjpbXX0.FzS8Nz_cXp-W4oCX37WBTSADB3iPWZKvGJQRDoANkhjS0YrnlGa4LXgDzyxp1Jx3ya4isvHmTJq519P-gr_MTCTSG-TBDdSZEDKTskX-phmIv6d3UnmFbINwswnHdios8izf-ONfZqM9NsIF-wJh6hYu0HRww7ACwyWzqkaDKErA56ohhH4vql5Y6o3lhUI6z8sIeZlMF32gQZF3ENRrXTrc2lFj-3njinCsxV2ogEoyS0jPsUybS9EOWqsh2V6R2zA7cNQtbB0TvpwqWUfLfMp4_W_e-6KC7lOuZGnOWgC3rUvt_rsded46onlgA0aoBk1j4IFu5C2FeAg1P6ZMqw"}'
+    http_version: 
+  recorded_at: Mon, 06 May 2019 01:20:27 GMT
+- request:
+    method: get
+    uri: https://api.petfinder.com/v2/animals?status=found
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImIxZjljNzhjNGIzZDY3NmRiMzM2ZDIzMmRkNDE0ZTg1OTNjZTllOWUzODg2MDVjNzlmMTY4YzMzZTk0Nzk2MjY5NmRkMTM1OGEzZGYzZWZlIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImIxZjljNzhjNGIzZDY3NmRiMzM2ZDIzMmRkNDE0ZTg1OTNjZTllOWUzODg2MDVjNzlmMTY4YzMzZTk0Nzk2MjY5NmRkMTM1OGEzZGYzZWZlIiwiaWF0IjoxNTU3MTA1NjI3LCJuYmYiOjE1NTcxMDU2MjcsImV4cCI6MTU1NzEwOTIyNywic3ViIjoiIiwic2NvcGVzIjpbXX0.FzS8Nz_cXp-W4oCX37WBTSADB3iPWZKvGJQRDoANkhjS0YrnlGa4LXgDzyxp1Jx3ya4isvHmTJq519P-gr_MTCTSG-TBDdSZEDKTskX-phmIv6d3UnmFbINwswnHdios8izf-ONfZqM9NsIF-wJh6hYu0HRww7ACwyWzqkaDKErA56ohhH4vql5Y6o3lhUI6z8sIeZlMF32gQZF3ENRrXTrc2lFj-3njinCsxV2ogEoyS0jPsUybS9EOWqsh2V6R2zA7cNQtbB0TvpwqWUfLfMp4_W_e-6KC7lOuZGnOWgC3rUvt_rsded46onlgA0aoBk1j4IFu5C2FeAg1P6ZMqw
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2944'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 06 May 2019 01:20:28 GMT
+      X-Amzn-Requestid:
+      - 21ec179c-6f9d-11e9-8505-f5cdf2470bce
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '2944'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZPLKZHLJoAMFXqg=
+      Cache-Control:
+      - no-cache, private
+      X-Amzn-Remapped-Date:
+      - Mon, 06 May 2019 01:20:28 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b2c7a6e5cdaa79dd9cda021cad5792a9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - WCbNbSk5o3N8wKh_H6XAFUOf4JXJ4b8tg75WmihYcouQxNecrSRZcA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"animals":[{"id":44622389,"organization_id":"OK15","url":"https:\/\/www.petfinder.com\/dog\/parker-44622389\/ny\/astoria\/friends-with-four-paws-ok15\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Shepherd","secondary":"Labrador
+        Retriever","mixed":true,"unknown":false},"colors":{"primary":"Brown \/ Chocolate","secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":"Short","attributes":{"spayed_neutered":true,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":true,"dogs":true,"cats":true},"tags":[],"name":"Parker","description":"Hello
+        World,  nice to meet you!\nMy name is Parker.  I am a Shepherds and lab mix
+        with tons of...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/1\/?bust=1557087645\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/1\/?bust=1557087645\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/1\/?bust=1557087645\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/1\/?bust=1557087645"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/2\/?bust=1557087650\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/2\/?bust=1557087650\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/2\/?bust=1557087650\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44622389\/2\/?bust=1557087650"}],"status":"found","published_at":"2019-05-05T20:21:13+0000","contact":{"email":"adoptioninfo@friendswithfourpaws.org","phone":null,"address":{"address1":null,"address2":null,"city":"Astoria","state":"NY","postcode":"11106","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44622389"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/ok15"}}},{"id":44620829,"organization_id":"CO327","url":"https:\/\/www.petfinder.com\/cat\/35340-44620829\/co\/littleton\/humane-society-of-the-south-platte-valley-co327\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Female","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"35340","description":"Primary
+        Color: Torbie","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44620829\/1\/?bust=1557074057\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44620829\/1\/?bust=1557074057\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44620829\/1\/?bust=1557074057\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44620829\/1\/?bust=1557074057"}],"status":"found","published_at":"2019-05-05T13:44:25+0000","contact":{"email":"info@hsspv.org","phone":"303-703-2938","address":{"address1":"2129
+        W. Chenango Ave., Unit A","address2":null,"city":"Littleton","state":"CO","postcode":"80120","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44620829"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/co327"}}},{"id":44619278,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/dog\/jarjar-44619278\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"American
+        Staffordshire Terrier","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Young","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Jarjar","description":"Primary
+        Color: Black Secondary Color: White Weight: 60lbs Age: 1yrs 0mths 0wks","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619278\/1\/?bust=1557097142\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619278\/1\/?bust=1557097142\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619278\/1\/?bust=1557097142\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619278\/1\/?bust=1557097142"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619278"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619281,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/jango-44619281\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Jango","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619281\/1\/?bust=1557097143\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619281\/1\/?bust=1557097143\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619281\/1\/?bust=1557097143\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619281\/1\/?bust=1557097143"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619281"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619284,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/jabba-44619284\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Jabba","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619284\/1\/?bust=1557097137\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619284\/1\/?bust=1557097137\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619284\/1\/?bust=1557097137\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619284\/1\/?bust=1557097137"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619284"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619276,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/shmi-skywalker-44619276\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Female","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Shmi
+        Skywalker","description":"Primary Color: Tabby- Brown Weight: 8.5lbs Age:
+        3yrs 0mths 0wks","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619276\/1\/?bust=1557097149\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619276\/1\/?bust=1557097149\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619276\/1\/?bust=1557097149\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619276\/1\/?bust=1557097149"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619276"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619282,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/boba-44619282\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Boba","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619282\/1\/?bust=1557097146\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619282\/1\/?bust=1557097146\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619282\/1\/?bust=1557097146\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619282\/1\/?bust=1557097146"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619282"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619280,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/dog\/mace-windu-44619280\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"American
+        Staffordshire Terrier","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"MacE
+        Windu","description":"Primary Color: Brindle- Brown Weight: 52lbs Age: 3yrs
+        0mths 0wks","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619280\/1\/?bust=1557097139\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619280\/1\/?bust=1557097139\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619280\/1\/?bust=1557097139\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619280\/1\/?bust=1557097139"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619280"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619275,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/dog\/niko-44619275\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Shih
+        Tzu","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":true,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Niko","description":"Primary
+        Color: Grey Weight: 9lbs Age: 6yrs 0mths 0wks Animal has been Neutered","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619275\/1\/?bust=1557097141\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619275\/1\/?bust=1557097141\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619275\/1\/?bust=1557097141\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619275\/1\/?bust=1557097141"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619275"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619283,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/aurra-44619283\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Female","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Aurra","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619283\/1\/?bust=1557097148\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619283\/1\/?bust=1557097148\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619283\/1\/?bust=1557097148\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619283\/1\/?bust=1557097148"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619283"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44619277,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/r2-d2-44619277\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"R2-D2","description":"Primary
+        Color: Tabby- Orange Weight: 1.56lbs Age: 0yrs 0mths 8wks","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619277\/1\/?bust=1557097148\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619277\/1\/?bust=1557097148\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619277\/1\/?bust=1557097148\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44619277\/1\/?bust=1557097148"}],"status":"found","published_at":"2019-05-05T12:23:56+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44619277"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614415,"organization_id":"KS100","url":"https:\/\/www.petfinder.com\/dog\/19-0335-19-0336-44614415\/ks\/emporia\/emporia-kansas-animal-shelter-ks100\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Maltese","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":"White
+        \/ Cream","secondary":null,"tertiary":null},"age":"Adult","gender":"Female","size":"Small","coat":"Long","attributes":{"spayed_neutered":false,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":false},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"19-0335      19-0336","description":"If
+        interested in adopting a pet from our shelter you will need to fill out a
+        request to adopt. There...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614415\/1\/?bust=1556994394\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614415\/1\/?bust=1556994394\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614415\/1\/?bust=1556994394\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614415\/1\/?bust=1556994394"}],"status":"found","published_at":"2019-05-04T18:26:45+0000","contact":{"email":"emporiakansasanimalshelter@gmail.com","phone":"(620)
+        340-6345","address":{"address1":"1216 Hatcher","address2":null,"city":"Emporia","state":"KS","postcode":"66801","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614415"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/ks100"}}},{"id":44614363,"organization_id":"KS100","url":"https:\/\/www.petfinder.com\/dog\/19-0334-44614363\/ks\/emporia\/emporia-kansas-animal-shelter-ks100\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Australian
+        Cattle Dog \/ Blue Heeler","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":"Tricolor
+        (Brown, Black, \u0026 White)","secondary":null,"tertiary":null},"age":"Adult","gender":"Female","size":"Medium","coat":"Short","attributes":{"spayed_neutered":false,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":false},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"19-0334","description":"If
+        interested in adopting a pet from our shelter you will need to fill out a
+        request to adopt. There...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614363\/1\/?bust=1556994309\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614363\/1\/?bust=1556994309\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614363\/1\/?bust=1556994309\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614363\/1\/?bust=1556994309"}],"status":"found","published_at":"2019-05-04T18:25:20+0000","contact":{"email":"emporiakansasanimalshelter@gmail.com","phone":"(620)
+        340-6345","address":{"address1":"1216 Hatcher","address2":null,"city":"Emporia","state":"KS","postcode":"66801","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614363"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/ks100"}}},{"id":44614375,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/dog\/big-boy-44614375\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"American
+        Staffordshire Terrier","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Big
+        Boy","description":"Primary Color: Blue Secondary Color: White Weight: 87lbs
+        Age: 3yrs 2mths 3wks","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614375\/1\/?bust=1557034483\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614375\/1\/?bust=1557034483\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614375\/1\/?bust=1557034483\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614375\/1\/?bust=1557034483"}],"status":"found","published_at":"2019-05-04T18:24:19+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614375"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614365,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/dog\/qui-gon-44614365\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Boxer","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Young","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Qui-Gon","description":"Primary
+        Color: White Secondary Color: Brindle- Black Weight: 39lbs Age: 1yrs 0mths
+        0wks","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614365\/1\/?bust=1557034484\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614365\/1\/?bust=1557034484\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614365\/1\/?bust=1557034484\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614365\/1\/?bust=1557034484"}],"status":"found","published_at":"2019-05-04T18:24:18+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614365"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614366,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/padme-44614366\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Female","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Padme","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614366\/1\/?bust=1557034476\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614366\/1\/?bust=1557034476\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614366\/1\/?bust=1557034476\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614366\/1\/?bust=1557034476"}],"status":"found","published_at":"2019-05-04T18:24:18+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614366"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614367,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/vader-44614367\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Vader","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614367\/1\/?bust=1557034479\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614367\/1\/?bust=1557034479\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614367\/1\/?bust=1557034479\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614367\/1\/?bust=1557034479"}],"status":"found","published_at":"2019-05-04T18:24:18+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614367"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614368,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/anakin-44614368\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Anakin","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614368\/1\/?bust=1557034482\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614368\/1\/?bust=1557034482\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614368\/1\/?bust=1557034482\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614368\/1\/?bust=1557034482"}],"status":"found","published_at":"2019-05-04T18:24:18+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614368"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614369,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/dooku-44614369\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Dooku","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614369\/1\/?bust=1557034483\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614369\/1\/?bust=1557034483\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614369\/1\/?bust=1557034483\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614369\/1\/?bust=1557034483"}],"status":"found","published_at":"2019-05-04T18:24:18+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614369"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}},{"id":44614370,"organization_id":"NC16","url":"https:\/\/www.petfinder.com\/cat\/amidala-44614370\/nc\/raleigh\/wake-county-animal-center-nc16\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Female","size":"Medium","coat":null,"attributes":{"spayed_neutered":false,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Amidala","description":"This
+        kitten is not available for adoption since he\/she is too young for spay\/neuter
+        surgery. Only animals that are available...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614370\/1\/?bust=1557034486\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614370\/1\/?bust=1557034486\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614370\/1\/?bust=1557034486\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44614370\/1\/?bust=1557034486"}],"status":"found","published_at":"2019-05-04T18:24:18+0000","contact":{"email":"animalcontrol@wakegov.com","phone":"919-212-7387
+        ","address":{"address1":"820 Beacon Lake Drive","address2":"PO Box 550","city":"Raleigh","state":"NC","postcode":"27602","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44614370"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/nc16"}}}],"pagination":{"count_per_page":20,"total_count":1361,"current_page":1,"total_pages":69,"_links":{"next":{"href":"\/v2\/animals?status=found\u0026page=2"}}}}'
+    http_version: 
+  recorded_at: Mon, 06 May 2019 01:20:28 GMT
+recorded_with: VCR 4.0.0

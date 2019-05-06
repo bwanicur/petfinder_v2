@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.petfinder.com/v2/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '607'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 02 May 2019 00:23:28 GMT
+      X-Amzn-Requestid:
+      - 81c1cee7-6c70-11e9-8cbf-53fd4ac67622
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '607'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZB3EAHGDoAMFSfw=
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-store, private
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Thu, 02 May 2019 00:23:28 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 08523828eac58ab546028ccf39ec743c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Nl5c72n7E3r5QTIkSxTg9_2qpiUBkbAO_4wBrHnu26vfN7iBUavXzA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjgwYWRkZjE3NGRkMGY3MzNkMzM0OTIwZWMyN2MyYTZlMzU2NTI1YzNmMTMyZWRmMzM5ZDA3NmZmM2FjM2RjMTQyMDlhZjEzMjc3YmYwZWVhIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjgwYWRkZjE3NGRkMGY3MzNkMzM0OTIwZWMyN2MyYTZlMzU2NTI1YzNmMTMyZWRmMzM5ZDA3NmZmM2FjM2RjMTQyMDlhZjEzMjc3YmYwZWVhIiwiaWF0IjoxNTU2NzU2NjA4LCJuYmYiOjE1NTY3NTY2MDgsImV4cCI6MTU1Njc2MDIwOCwic3ViIjoiIiwic2NvcGVzIjpbXX0.zT4w9S8puNoVKQrAj1aRXibqTeHmAfXKif_NlaTiAz02Cp_heH11iYSD-uc9kLOwlUseObKYh6H-Art7uR3xMTlIXVKbk7BFhQx3Pt1aUrFnJkuFWOTctlU1uzerldm5WIcKMcP5bEU_zUIFU1Vmxl16oedEk7E5RCqeAmvQRQ93m2IFRh--N_zajkAiMwesRx4nWtUXlSKBfeKnNi9nfOC_Y6gulzEqjtfQ71AnjHhP-bTrriHKB3dhjYRuHhMPpLN4sr4pF2Qxpfh4BU4rtYSmFkeQSmcIZpegXpUeDnlsfrv9JsGDSRAAQFV6LTILN0cw0-6AWED5V5MfgKLA6w"}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 00:23:28 GMT
+- request:
+    method: get
+    uri: https://api.petfinder.com/v2/animals?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjgwYWRkZjE3NGRkMGY3MzNkMzM0OTIwZWMyN2MyYTZlMzU2NTI1YzNmMTMyZWRmMzM5ZDA3NmZmM2FjM2RjMTQyMDlhZjEzMjc3YmYwZWVhIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjgwYWRkZjE3NGRkMGY3MzNkMzM0OTIwZWMyN2MyYTZlMzU2NTI1YzNmMTMyZWRmMzM5ZDA3NmZmM2FjM2RjMTQyMDlhZjEzMjc3YmYwZWVhIiwiaWF0IjoxNTU2NzU2NjA4LCJuYmYiOjE1NTY3NTY2MDgsImV4cCI6MTU1Njc2MDIwOCwic3ViIjoiIiwic2NvcGVzIjpbXX0.zT4w9S8puNoVKQrAj1aRXibqTeHmAfXKif_NlaTiAz02Cp_heH11iYSD-uc9kLOwlUseObKYh6H-Art7uR3xMTlIXVKbk7BFhQx3Pt1aUrFnJkuFWOTctlU1uzerldm5WIcKMcP5bEU_zUIFU1Vmxl16oedEk7E5RCqeAmvQRQ93m2IFRh--N_zajkAiMwesRx4nWtUXlSKBfeKnNi9nfOC_Y6gulzEqjtfQ71AnjHhP-bTrriHKB3dhjYRuHhMPpLN4sr4pF2Qxpfh4BU4rtYSmFkeQSmcIZpegXpUeDnlsfrv9JsGDSRAAQFV6LTILN0cw0-6AWED5V5MfgKLA6w
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1823'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 02 May 2019 00:23:29 GMT
+      X-Amzn-Requestid:
+      - 8210b278-6c70-11e9-b868-c1711aa0ece9
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '1823'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZB3EFEEkIAMFazg=
+      Cache-Control:
+      - no-cache, private
+      X-Amzn-Remapped-Date:
+      - Thu, 02 May 2019 00:23:29 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 42f9f0e9bd0296c3bb45648019b2dce5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - a81j0GeUo8RlAxa8x9msRVjEMckSRBIyg-Y1Yck4XN-GuT078WG-JA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"animals":[{"id":44593707,"organization_id":"TN147","url":"https:\/\/www.petfinder.com\/cat\/sweet-potato-44593707\/tn\/memphis\/mewtopia-cat-rescue-tn147\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":"Orange
+        \/ Red","secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Large","coat":"Short","attributes":{"spayed_neutered":false,"house_trained":true,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Sweet
+        Potato","description":"I\u0026#039;m about the cutest little Sweet Potato
+        you\u0026#039;ll ever meet!","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/1\/?bust=1556756540\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/1\/?bust=1556756540\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/1\/?bust=1556756540\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/1\/?bust=1556756540"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/2\/?bust=1556756553\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/2\/?bust=1556756553\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/2\/?bust=1556756553\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593707\/2\/?bust=1556756553"}],"status":"adoptable","published_at":"2019-05-02T00:23:21+0000","contact":{"email":"mewtopia1@yahoo.com","phone":"901-503-9328
+        ","address":{"address1":"1010 S. Yates","address2":null,"city":"Memphis","state":"TN","postcode":"38119","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44593707"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/tn147"}}},{"id":44593709,"organization_id":"MA141","url":"https:\/\/www.petfinder.com\/cat\/robin-44593709\/ma\/hopkinton\/baypath-humane-society-of-hopkinton-inc-ma141\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Long Hair","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":true,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"Robin","description":"Robin
+        is a sweet boy who is looking for the right home!   He is very sweet once
+        he knows you...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593709\/1\/?bust=1556756553\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593709\/1\/?bust=1556756553\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593709\/1\/?bust=1556756553\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593709\/1\/?bust=1556756553"}],"status":"adoptable","published_at":"2019-05-02T00:23:08+0000","contact":{"email":"adopt@baypathhumane.org","phone":"(508)
+        435-6938","address":{"address1":"500 Legacy Farms North","address2":null,"city":"Hopkinton","state":"MA","postcode":"01748","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44593709"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/ma141"}}},{"id":44593640,"organization_id":"MA141","url":"https:\/\/www.petfinder.com\/dog\/ruston-44593640\/ma\/hopkinton\/baypath-humane-society-of-hopkinton-inc-ma141\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Mixed
+        Breed","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Baby","gender":"Male","size":"Medium","coat":null,"attributes":{"spayed_neutered":true,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":null,"dogs":true,"cats":null},"tags":[],"name":"Ruston","description":"Ruston
+        is a beautiful puppy that came to us from Louisiana after having lived a very
+        sheltered life without receiving...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/1\/?bust=1556756389\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/1\/?bust=1556756389\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/1\/?bust=1556756389\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/1\/?bust=1556756389"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/2\/?bust=1556756393\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/2\/?bust=1556756393\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/2\/?bust=1556756393\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/2\/?bust=1556756393"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/3\/?bust=1556756397\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/3\/?bust=1556756397\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/3\/?bust=1556756397\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593640\/3\/?bust=1556756397"}],"status":"adoptable","published_at":"2019-05-02T00:21:22+0000","contact":{"email":"adopt@baypathhumane.org","phone":"(508)
+        435-6938","address":{"address1":"500 Legacy Farms North","address2":null,"city":"Hopkinton","state":"MA","postcode":"01748","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44593640"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/ma141"}}},{"id":44593227,"organization_id":"PA480","url":"https:\/\/www.petfinder.com\/dog\/sparky-44593227\/pa\/souderton\/salfid-rescue-pa480\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Retriever","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":"Apricot
+        \/ Beige","secondary":"Black","tertiary":null},"age":"Young","gender":"Male","size":"Medium","coat":"Medium","attributes":{"spayed_neutered":true,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":true,"dogs":true,"cats":true},"tags":["Friendly"],"name":"Sparky","description":"Meet
+        Sparky,\nSparky is a 2-3 year old retriever mixed breed. This handsome boy
+        is new to our Salfid family...","photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/1\/?bust=1556755864\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/1\/?bust=1556755864\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/1\/?bust=1556755864\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/1\/?bust=1556755864"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/2\/?bust=1556755872\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/2\/?bust=1556755872\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/2\/?bust=1556755872\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44593227\/2\/?bust=1556755872"}],"status":"adoptable","published_at":"2019-05-02T00:21:20+0000","contact":{"email":"Salfidapps@gmail.com","phone":null,"address":{"address1":"1932
+        Clearview Road","address2":null,"city":"Souderton","state":"PA","postcode":"18964","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44593227"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/pa480"}}},{"id":44593704,"organization_id":"CA594","url":"https:\/\/www.petfinder.com\/cat\/a583487-44593704\/ca\/oroville\/northwest-s-dot-pc-dot-a-ca594\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Cat","species":"Cat","breeds":{"primary":"Domestic
+        Short Hair","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Adult","gender":"Male","size":"Small","coat":null,"attributes":{"spayed_neutered":true,"house_trained":false,"declawed":false,"special_needs":false,"shots_current":false},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"A583487","description":null,"photos":[],"status":"adoptable","published_at":"2019-05-02T00:21:00+0000","contact":{"email":"contact@northwestspca.org","phone":"(530)533-7636  ","address":{"address1":"2787
+        South 5th Avenue","address2":null,"city":"Oroville","state":"CA","postcode":"95965","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44593704"},"type":{"href":"\/v2\/types\/cat"},"organization":{"href":"\/v2\/organizations\/ca594"}}}],"pagination":{"count_per_page":5,"total_count":7671780,"current_page":1,"total_pages":1534356,"_links":{"next":{"href":"\/v2\/animals?limit=5\u0026page=2"}}}}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 00:23:29 GMT
+recorded_with: VCR 4.0.0
