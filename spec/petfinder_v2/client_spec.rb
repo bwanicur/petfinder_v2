@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe PetfinderV2::Client do
   let(:client) { described_class.new(CLIENT_ID, CLIENT_SECRET) }
-  before { PetfinderV2::Client.class_variable_set(:@@access_token, nil) }
+  before { PetfinderV2::Requests::Request.class_variable_set(:@@access_token, nil) }
 
   describe '#search_animals' do
     it 'should return a collection using the limit' do
@@ -117,6 +117,12 @@ RSpec.describe PetfinderV2::Client do
     context 'errors' do
       it 'should raise an exception if we have invalid options' do
         expect { client.search_animals(age: 'this is wrong') }.to raise_error(PetfinderV2::InvalidRequestOptionsError)
+      end
+
+      it 'should capture an invalid CLIENT_ID / CLIENT_SECRET request inside an exception' do
+        VCR.use_cassette('invalid-pf-credntials-request') do
+          expect { client.search_animals(type: 'dog') }.to raise_error(PetfinderV2::Error)
+        end
       end
     end
   end

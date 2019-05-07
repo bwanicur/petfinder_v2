@@ -1,6 +1,5 @@
 require 'faraday'
 require 'json'
-require_relative '../services/options_validator'
 require_relative './access_token_request'
 require_relative '../models/access_token'
 
@@ -37,20 +36,12 @@ module PetfinderV2
       end
 
       def get(path, opts = {})
-        validate_options!(opts)
         set_connection_headers
         set_connection_get_params(opts)
         @conn.get(path)
       end
 
       private
-
-      def validate_options!(opts)
-        errors = PetfinderV2::Services::OptionsValidator.new(opts).run
-        unless errors.empty?
-          raise(PetfinderV2::InvalidRequestOptionsError, errors.join("\n"))
-        end
-      end
 
       def set_connection_headers
         @conn.headers['Content-Type'] = 'application/json'

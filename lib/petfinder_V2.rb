@@ -1,5 +1,5 @@
-require "petfinder_V2/version"
-require "petfinder_V2/client"
+require 'petfinder_V2/version'
+require 'petfinder_V2/client'
 
 module PetfinderV2
   class Error < StandardError; end
