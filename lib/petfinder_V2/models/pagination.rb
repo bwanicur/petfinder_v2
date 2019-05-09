@@ -1,20 +1,18 @@
 module PetfinderV2
   module Models
     class Pagination
-      ATTS = %w[
-        count_per_page
-        total_count
-        current_page
-        total_pages
-        _links
-      ].freeze
+      attr_reader :count_per_page,
+                  :total_count,
+                  :current_page,
+                  :total_pages,
+                  :links
 
       def initialize(data)
-        @data = data
-      end
-
-      ATTS.each do |att|
-        define_method(att.to_sym) { @data[att] }
+        @count_per_page = data['count_per_page']
+        @total_count = data['total_count']
+        @current_page = data['current_page']
+        @total_pages = data['total_pages']
+        @links = data['_links']
       end
     end
   end

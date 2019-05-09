@@ -134,4 +134,7 @@ RSpec.describe PetfinderV2::Client do
       end
     end
   end
+
+  describe '#search_organizations' do
+  end
 end

@@ -5,6 +5,7 @@ require_relative 'requests/request'
 require_relative 'requests/access_token_request'
 require_relative 'models/access_token'
 require_relative 'models/animal'
+require_relative 'models/organization'
 
 module PetfinderV2
   class Client

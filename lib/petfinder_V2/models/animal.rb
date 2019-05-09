@@ -1,42 +1,20 @@
 require_relative 'pagination'
 require_relative 'contact'
+require_relative 'photos'
 
 module PetfinderV2
   module Models
     class Breed
-      ATTS = %w[
-        primary
-        secondary
-        mixed
-        unknown
-      ].freeze
-
+      attr_reader :primary, :secondary, :mixed, :unknown
       def initialize(data)
-        @data = data
-      end
-
-      ATTS.each do |att|
-        define_method(att.to_sym) { @data[att] }
+        @primary = data['primary']
+        @secondary = data['secondary']
+        @mixed = data['mixed']
+        @unknown = data['unknown']
       end
     end
 
     class Animal
-      BASIC_ATTS = %w[
-        age
-        coat
-        contact
-        description
-        gender
-        id
-        name
-        organization_id
-        photos
-        species
-        size
-        status
-        type
-      ].freeze
-
       NESTED_ATTRIBUTE_ATTS = %w[
         declawed
         house_trained
@@ -52,12 +30,34 @@ module PetfinderV2
         }
       end
 
+      attr_reader :age,
+                  :coat,
+                  :contact,
+                  :description,
+                  :gender,
+                  :id,
+                  :name,
+                  :organization_id,
+                  :species,
+                  :size,
+                  :status,
+                  :type
+
       def initialize(data)
         @data = data
-      end
-
-      BASIC_ATTS.each do |att|
-        define_method(att.to_sym) { @data[att] }
+        @age = data['age']
+        @coat = data['coat']
+        @contact = data['contact']
+        @description = data['description']
+        @gender = data['gender']
+        @id = data['age']
+        @name = data['name']
+        @organization_id = data['organization_id']
+        @photos = data['photos']
+        @species = data['species']
+        @size = data['size']
+        @status = data['status']
+        @type = data['type']
       end
 
       NESTED_ATTRIBUTE_ATTS.each do |att|
@@ -74,6 +74,10 @@ module PetfinderV2
 
       def contact
         Contact.new(@data['contact'])
+      end
+
+      def photos
+        Photos.process_collection(@data['photos'])
       end
 
       def link

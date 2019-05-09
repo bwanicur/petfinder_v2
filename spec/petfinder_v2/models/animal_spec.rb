@@ -154,6 +154,12 @@ RSpec.describe PetfinderV2::Models::Animal do
         expect(contact.address.state).to eq('NJ')
       end
 
+      it 'should return an array of photos objects' do
+        photos = model.photos
+        expect(photos.class).to eq(Array)
+        expect(photos.size).to eq(1)
+      end
+
       it 'should return the full response' do
         expect(model.full_response).to eq(animal_response)
       end
