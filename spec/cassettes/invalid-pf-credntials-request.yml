@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.petfinder.com/v2/oauth2/token
     body:
       encoding: UTF-8
-      string: client_id&client_secret&grant_type=client_credentials
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
       - Faraday v0.15.4
@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 07 May 2019 23:13:24 GMT
+      - Thu, 09 May 2019 02:48:30 GMT
       X-Amzn-Requestid:
-      - b6d3e0f1-711d-11e9-a677-4777c73b3f14
+      - ed7712d1-7204-11e9-b742-6f4d59ea795c
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Amzn-Remapped-Content-Length:
@@ -37,70 +37,22 @@ http_interactions:
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - ZVebOHAkIAMFwyg=
+      - ZZQ3sGG0IAMF5uA=
       Cache-Control:
       - no-cache, private
       X-Amzn-Remapped-Date:
-      - Tue, 07 May 2019 23:13:24 GMT
+      - Thu, 09 May 2019 02:48:30 GMT
       X-Cache:
       - Error from cloudfront
       Via:
-      - 1.1 1e83a150e7491cb333eb425f408659bb.cloudfront.net (CloudFront)
+      - 1.1 95602ccdafd7f13c744024fa5d814dc7.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - aTsL8O-f-hleCdj0qmwYH6ijFwoSoZkaL9n4kY0Rz8RcLmfLUT-6sw==
+      - EqZhUwrSJXfbtrUqVqYitvAXtwLfA99YupFqV-2bAWdCdG5VCjo35Q==
     body:
       encoding: UTF-8
       string: '{"type":"https:\/\/www.petfinder.com\/developers\/v2\/docs\/errors\/ERR-401\/","status":401,"title":"invalid_client","detail":"Client
         authentication failed","errors":[{"code":"invalid_client","title":"Unauthorized","message":"Client
         authentication failed","details":"Client authentication failed","href":"http:\/\/developer.petfinder.com\/v2\/errors.html#invalid_client"}],"hint":null}'
     http_version: 
-  recorded_at: Tue, 07 May 2019 23:13:24 GMT
-- request:
-    method: get
-    uri: https://api.petfinder.com/v2/animals?type=dog
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.15.4
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Content-Type:
-      - application/problem+json
-      Content-Length:
-      - '118'
-      Connection:
-      - keep-alive
-      Date:
-      - Tue, 07 May 2019 23:13:25 GMT
-      X-Amzn-Requestid:
-      - b71cf86c-711d-11e9-a973-b15cc95fc8c2
-      X-Amzn-Errortype:
-      - UnauthorizedException
-      X-Amz-Apigw-Id:
-      - ZVebTGKtIAMFkfg=
-      X-Cache:
-      - Error from cloudfront
-      Via:
-      - 1.1 ff384540f58636568878f75f3d58b141.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 5BRFaLvbR8LbUJXQySmu5PT5HEhiINJL5O0c9t4iu3n6KeZRhSju3Q==
-    body:
-      encoding: UTF-8
-      string: '{"type":"https://httpstatus.es/401", "status":401, "title":"Unauthorized",
-        "detail":"Access token invalid or expired"}'
-    http_version: 
-  recorded_at: Tue, 07 May 2019 23:13:25 GMT
+  recorded_at: Thu, 09 May 2019 02:48:30 GMT
 recorded_with: VCR 4.0.0

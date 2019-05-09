@@ -2,7 +2,15 @@ require 'spec_helper'
 
 RSpec.describe PetfinderV2::Client do
   let(:client) { described_class.new(CLIENT_ID, CLIENT_SECRET) }
-  before { PetfinderV2::Requests::Request.class_variable_set(:@@access_token, nil) }
+  before { described_class.class_variable_set(:@@access_token, nil) }
+
+  describe 'self.reset_access_token!' do
+    it 'should reset the access token from the PetfinderV2 OAuth' do
+      described_class.class_variable_set(:@@access_token, 'not-nil')
+      described_class.reset_access_token!
+      expect(described_class.class_variable_get(:@@access_token)).to be_nil
+    end
+  end
 
   describe '#search_animals' do
     it 'should return a collection using the limit' do

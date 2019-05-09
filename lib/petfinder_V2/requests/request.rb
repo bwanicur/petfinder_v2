@@ -1,7 +1,4 @@
 require 'faraday'
-require 'json'
-require_relative './access_token_request'
-require_relative '../models/access_token'
 
 module PetfinderV2
   module Requests
@@ -31,7 +28,12 @@ module PetfinderV2
         type
       ].freeze
 
-      def initialize
+      def self.reset_access_token!
+        @@access_token = nil
+      end
+
+      def initialize(access_token)
+        @access_token = access_token
         @conn = Faraday.new(BASE_URL)
       end
 
@@ -45,7 +47,7 @@ module PetfinderV2
 
       def set_connection_headers
         @conn.headers['Content-Type'] = 'application/json'
-        @conn.headers['Authorization'] = "Bearer #{get_token.token}"
+        @conn.headers['Authorization'] = "Bearer #{@access_token}"
       end
 
       def set_connection_get_params(opts)
@@ -63,24 +65,6 @@ module PetfinderV2
         else
           collection.to_s
         end
-      end
-
-      def get_token
-        access_token_expired? ? refresh_access_token : @@access_token
-      end
-
-      def access_token_expired?
-        return true if @@access_token.nil?
-
-        @@access_token.expires_at < Time.now
-      end
-
-      def refresh_access_token
-        res = Requests::AccessTokenRequest.new(
-          @client_id,
-          @client_secret
-        ).get_access_token
-        Models::AccessToken.new(res)
       end
     end
   end

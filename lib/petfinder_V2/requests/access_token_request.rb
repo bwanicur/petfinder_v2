@@ -1,10 +1,9 @@
 require 'faraday'
-require 'json'
 
 module PetfinderV2
   module Requests
     class AccessTokenRequest
-      URL = 'https://api.petfinder.com/v2/oauth2/token'
+      URL = 'https://api.petfinder.com/v2/oauth2/token'.freeze
 
       def initialize(client_id, client_secret)
         @client_id = client_id
@@ -13,12 +12,10 @@ module PetfinderV2
       end
 
       def get_access_token
-        res = @conn.post URL, {
-          client_id: @client_id,
-          client_secret: @client_secret,
-          grant_type: 'client_credentials'
-        }
-        JSON.parse(res.body)
+        @conn.post URL,
+                   client_id: @client_id,
+                   client_secret: @client_secret,
+                   grant_type: 'client_credentials'
       end
     end
   end
