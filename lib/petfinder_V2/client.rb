@@ -1,6 +1,7 @@
 require 'json'
 require_relative 'config'
-require_relative 'services/options_validator'
+require_relative 'services/animal_options_validator'
+require_relative 'services/organization_options_validator'
 require_relative 'requests/request'
 require_relative 'requests/access_token_request'
 require_relative 'models/access_token'
@@ -20,19 +21,25 @@ module PetfinderV2
     end
 
     def search_animals(opts = {})
+      validate_animal_options!(opts)
       response_data = base_request(:get, 'animals', opts)
       Models::Animal.process_collection(response_data)
     end
 
+    def get_animal(id)
+      response_data = base_request(:get, "animals/#{id}")
+      Models::Animal.new(response_data['animal'])
+    end
+
     def search_organizations(opts = {})
-      # response_data = base_request(:get, 'organizations', opts)
-      # Models::Organization.process_collection(response_data)
+      validate_organization_options!(opts)
+      response_data = base_request(:get, 'organizations', opts)
+      Models::Organization.process_collection(response_data)
     end
 
     private
 
-    def base_request(http_verb, endpoint, opts)
-      validate_options!(opts)
+    def base_request(http_verb, endpoint, opts = {})
       res = Requests::Request.new(get_token.token)
                              .send(http_verb, endpoint, opts)
       response_data = JSON.parse(res.body)
@@ -40,11 +47,18 @@ module PetfinderV2
       response_data
     end
 
-    def validate_options!(opts)
-      errors = PetfinderV2::Services::OptionsValidator.new(opts).run
-      unless errors.empty?
-        raise(PetfinderV2::InvalidRequestOptionsError, errors.join("\n"))
-      end
+    def validate_animal_options!(opts)
+      errors = Services::AnimalOptionsValidator.new(opts).run
+      invalid_options_error!(errors)
+    end
+
+    def validate_organization_options!(opts)
+      errors = Services::AnimalOptionsValidator.new(opts).run
+      invalid_options_error!(errors)
+    end
+
+    def invalid_options_error!(errors)
+      raise(InvalidRequestOptionsError, errors.join("\n")) unless errors.empty?
     end
 
     def handle_errors!(data)

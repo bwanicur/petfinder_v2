@@ -135,6 +135,39 @@ RSpec.describe PetfinderV2::Client do
     end
   end
 
+  describe '#get_animal' do
+    it 'should return a single animal object' do
+      test_animal_id = 44_684_188
+      VCR.use_cassette('get-animal') do
+        res = client.get_animal(test_animal_id)
+        expect(res).to be_a(PetfinderV2::Models::Animal)
+        expect(res.name).to eq('ACE')
+        expect(res.age).to eq('Senior')
+      end
+    end
+
+    it 'should raise an exception if the id is not found' do
+      VCR.use_cassette('no-animal-404') do
+        expect { client.get_animal(124) }.to raise_error(PetfinderV2::Error)
+      end
+    end
+  end
+
   describe '#search_organizations' do
+    it 'should search organizations by name' do
+      VCR.use_cassette('search-organizations-by-name') do
+        res = client.search_organizations(name: 'Second Chance Dog Rescue')
+        expect(res[:organizations].size).to eq(6)
+        expect(res[:pagination].total_pages).to eq(1)
+        expect(res[:pagination].total_count).to eq(6)
+      end
+    end
+
+    it 'should  search by location' do
+      VCR.use_cassette('search-organizations-by-location') do
+        res = client.search_organizations(location: '92101', distance: 5, limit: 30)
+        expect(res[:organizations].count).to eq(21)
+      end
+    end
   end
 end

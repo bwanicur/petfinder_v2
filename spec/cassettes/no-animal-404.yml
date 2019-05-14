@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.petfinder.com/v2/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '611'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 02:58:20 GMT
+      X-Amzn-Requestid:
+      - 219a6f98-75f4-11e9-86cd-8da10a45e07b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '611'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - Zpw__HEKIAMFkOQ=
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-store, private
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 02:58:20 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 604f1c33e59a82f453e462cd10d087c6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Xy_Sj6je7-UlRj5H04aXlisi1MzRJTRs5D9LL55sXeROx_kqQ48uZg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4IiwiaWF0IjoxNTU3ODAyNzAwLCJuYmYiOjE1NTc4MDI3MDAsImV4cCI6MTU1NzgwNjMwMCwic3ViIjoiIiwic2NvcGVzIjpbXX0.lwLl6vyVMaDcUV6TZUjRpgVM6Rv56rO187vy4MmczM1708Sqt_eVIWZ14ltx06oO7wGKxjoQUpS9acZaduwsOpZHmsA9vlWATmpAJ4ejfaK0NCDbEC9x-NvOeXLTN9A0VujCGjswds-Y8xYuHvtV5YAB60pJIWwW0VhcHgqMVPsm8mPu0k8br4os7rWS5ojdE93stxFf8nSk6Tf0XUREwcVjqLxLkRri9JyKjYDwUbUf7hoOfM6NRMjYAhoK_YgeBAVyATNeEWBG-DDTc_ridAs-nBuyyo5GgYpW58lvLYmaTixr5bJDhZGbhm-qWGY3Bc6mAtmmSP_73KpRqv6rCQ"}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 02:58:20 GMT
+- request:
+    method: get
+    uri: https://api.petfinder.com/v2/animals/124
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4IiwiaWF0IjoxNTU3ODAyNzAwLCJuYmYiOjE1NTc4MDI3MDAsImV4cCI6MTU1NzgwNjMwMCwic3ViIjoiIiwic2NvcGVzIjpbXX0.lwLl6vyVMaDcUV6TZUjRpgVM6Rv56rO187vy4MmczM1708Sqt_eVIWZ14ltx06oO7wGKxjoQUpS9acZaduwsOpZHmsA9vlWATmpAJ4ejfaK0NCDbEC9x-NvOeXLTN9A0VujCGjswds-Y8xYuHvtV5YAB60pJIWwW0VhcHgqMVPsm8mPu0k8br4os7rWS5ojdE93stxFf8nSk6Tf0XUREwcVjqLxLkRri9JyKjYDwUbUf7hoOfM6NRMjYAhoK_YgeBAVyATNeEWBG-DDTc_ridAs-nBuyyo5GgYpW58lvLYmaTixr5bJDhZGbhm-qWGY3Bc6mAtmmSP_73KpRqv6rCQ
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/problem+json
+      Content-Length:
+      - '133'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 02:58:21 GMT
+      X-Amzn-Requestid:
+      - 21f0a5e7-75f4-11e9-adda-61906e260386
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '133'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZpxAFFOXoAMF2Hg=
+      Cache-Control:
+      - no-cache, private
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 02:58:21 GMT
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 9aa63176da96af27728ba1a5368ddfdd.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rnMmH3vV7O5L3wHodUMcPKRNd2nzPm7rzc3hjQGnIMDoGFKXVVk_nQ==
+    body:
+      encoding: UTF-8
+      string: '{"type":"https:\/\/www.petfinder.com\/developers\/v2\/docs\/errors\/ERR-404\/","status":404,"title":"Not
+        Found","detail":"Not Found"}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 02:58:21 GMT
+recorded_with: VCR 4.0.0

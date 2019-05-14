@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.petfinder.com/v2/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '608'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 02:52:38 GMT
+      X-Amzn-Requestid:
+      - 55722fc6-75f3-11e9-b374-fbd2f4f47be4
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '608'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZpwKeGFfoAMFvWg=
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-store, private
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 02:52:38 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f31caa93b978c897d9a683f5912c6d74.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Iy01HPca2SF7pU6PVeWcKKUfZaAWJoOFlGZsflS58ImacI7pdhEqoA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE1MzY5MGNhMDhmZDM2NjkyMTBmMjVmNDMwYTA3MmNkMTM5NzVkM2UyNzFjZWQyYTVmNjQ4MmNmZjlmOWNhMDYyODE4YTUzMmQzN2ZlY2VmIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImE1MzY5MGNhMDhmZDM2NjkyMTBmMjVmNDMwYTA3MmNkMTM5NzVkM2UyNzFjZWQyYTVmNjQ4MmNmZjlmOWNhMDYyODE4YTUzMmQzN2ZlY2VmIiwiaWF0IjoxNTU3ODAyMzU4LCJuYmYiOjE1NTc4MDIzNTgsImV4cCI6MTU1NzgwNTk1OCwic3ViIjoiIiwic2NvcGVzIjpbXX0.yqlCMB5Zxen9atFa14M0uEQF0nJJeCMLuFZ-Niu8Le6vg_2FqROVqzo3m-JamwlmfvAleWR1s-GII_ZPxweYzJKnMzDlGUn6_39r3xY8SqQqrPbOQylx2Ls6KZNeX7tih068blB-EVnnXtoez3FrDdPuBCDUIp8SCbFUXzclUYsq-ik9C4y45oS5Ai11Wxlp6c4rey7nfQCelSIxdntorprXSHLsx7XbfkqvONLt8adtQ-IuVkcZQQYrm_9xJMJeupt9Qnhi3eN3FXnE6v-7g_o9Ary2cNPPWTnVoKE_gi_oPRtlm-2lCZe9wnXGnaD0yPD5GtsmLqDe_0aDHXVc9w"}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 02:52:38 GMT
+- request:
+    method: get
+    uri: https://api.petfinder.com/v2/animals/44684188
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE1MzY5MGNhMDhmZDM2NjkyMTBmMjVmNDMwYTA3MmNkMTM5NzVkM2UyNzFjZWQyYTVmNjQ4MmNmZjlmOWNhMDYyODE4YTUzMmQzN2ZlY2VmIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImE1MzY5MGNhMDhmZDM2NjkyMTBmMjVmNDMwYTA3MmNkMTM5NzVkM2UyNzFjZWQyYTVmNjQ4MmNmZjlmOWNhMDYyODE4YTUzMmQzN2ZlY2VmIiwiaWF0IjoxNTU3ODAyMzU4LCJuYmYiOjE1NTc4MDIzNTgsImV4cCI6MTU1NzgwNTk1OCwic3ViIjoiIiwic2NvcGVzIjpbXX0.yqlCMB5Zxen9atFa14M0uEQF0nJJeCMLuFZ-Niu8Le6vg_2FqROVqzo3m-JamwlmfvAleWR1s-GII_ZPxweYzJKnMzDlGUn6_39r3xY8SqQqrPbOQylx2Ls6KZNeX7tih068blB-EVnnXtoez3FrDdPuBCDUIp8SCbFUXzclUYsq-ik9C4y45oS5Ai11Wxlp6c4rey7nfQCelSIxdntorprXSHLsx7XbfkqvONLt8adtQ-IuVkcZQQYrm_9xJMJeupt9Qnhi3eN3FXnE6v-7g_o9Ary2cNPPWTnVoKE_gi_oPRtlm-2lCZe9wnXGnaD0yPD5GtsmLqDe_0aDHXVc9w
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '703'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 02:52:39 GMT
+      X-Amzn-Requestid:
+      - 55c70630-75f3-11e9-a7d4-c57b81aa31db
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '703'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZpwKkEWfoAMF_2g=
+      Cache-Control:
+      - no-cache, private
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 02:52:39 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7acf1813f9ec06038d676de15fcfc28f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - XxhoIEJ7fnsp2VbTSqR1uDE68t48dz5TpS6mbg1LYvdj0FvsKeD49A==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"animal":{"id":44684188,"organization_id":"CA257","url":"https:\/\/www.petfinder.com\/dog\/ace-44684188\/ca\/tustin\/oc-animal-care-ca257\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","type":"Dog","species":"Dog","breeds":{"primary":"Maltese","secondary":null,"mixed":false,"unknown":false},"colors":{"primary":null,"secondary":null,"tertiary":null},"age":"Senior","gender":"Male","size":"Small","coat":null,"attributes":{"spayed_neutered":true,"house_trained":false,"declawed":null,"special_needs":false,"shots_current":false},"environment":{"children":null,"dogs":null,"cats":null},"tags":[],"name":"ACE","description":null,"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44684188\/1\/?bust=1557774398\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44684188\/1\/?bust=1557774398\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44684188\/1\/?bust=1557774398\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/44684188\/1\/?bust=1557774398"}],"status":"adoptable","published_at":"2019-05-13T17:13:49+0000","contact":{"email":"OCCRocpetinfo@occr.ocgov.com","phone":"(714)
+        935-6848","address":{"address1":"1630 Victory Road","address2":null,"city":"Tustin","state":"CA","postcode":"92782","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/44684188"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/ca257"}}}}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 02:52:39 GMT
+recorded_with: VCR 4.0.0

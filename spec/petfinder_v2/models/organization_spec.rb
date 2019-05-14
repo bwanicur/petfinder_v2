@@ -78,7 +78,6 @@ RSpec.describe PetfinderV2::Models::Organization do
     it 'should return a collection of Organizations and a Pagination object' do
       res = described_class.process_collection(full_response)
       expect(res[:pagination]).to be_a(PetfinderV2::Models::Pagination)
-      expect(res[:pagination].count_per_page).to eq(20)
       expect(res[:organizations]).to be_a(Array)
       expect(res[:organizations].size).to eq(1)
     end

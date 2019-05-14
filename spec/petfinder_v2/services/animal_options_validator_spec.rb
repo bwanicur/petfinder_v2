@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Services::OptionsValidator do
+RSpec.describe PetfinderV2::Services::AnimalOptionsValidator do
   let(:valid_opts) do
     {
       age: %w[adult senior],

@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.petfinder.com/v2/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '609'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 03:01:42 GMT
+      X-Amzn-Requestid:
+      - 9a0242c5-75f4-11e9-bf57-a344195dfdb2
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '609'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZpxfjHocoAMF-xw=
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-store, private
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 03:01:42 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2789801ae3a48d82c133f9b7d9690609.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - FZ7Cj1k7w8wl4iaqh_UpeO5zY0Urpsd8F4-KFU8cNK9KMf7lvPGPzQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI0NWZkZjM0MmU1YTUyYWNlYmMzMzc1MTFiMmRmZGQxYjdhY2Q4MzE2YjZlMjM2OTA3NGRhOGE0OGUxODEwYTFiMWE1MzlhNThhZmJhNTExIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjI0NWZkZjM0MmU1YTUyYWNlYmMzMzc1MTFiMmRmZGQxYjdhY2Q4MzE2YjZlMjM2OTA3NGRhOGE0OGUxODEwYTFiMWE1MzlhNThhZmJhNTExIiwiaWF0IjoxNTU3ODAyOTAyLCJuYmYiOjE1NTc4MDI5MDIsImV4cCI6MTU1NzgwNjUwMiwic3ViIjoiIiwic2NvcGVzIjpbXX0.IMckxEbHBSPvDSrcaji5Frbf5N9RfxvPqSk82RhkthFTtV_uR3WhpxtxubqnqgkDd--QsepKcNqHUw59bSegsHYJyNPHDPdR3elbMc3K2LNfdPJqYF_MKMwKp4qqnYN_51ysxMwaxzCgjYH_XRQ6HPg4G3AI12Kq_EPrBbBAVbVVixsR2EGJ26Gqx_sTi15xypJl8cgzuHj7SBufCqMseNb2wdjhLPKqsMErHKjV2Rj1UjMqW4TfVVc6eatFSmUsgqPCc-n7LDGSkpJBDSoBCUOSzr6RgUBWryngOtQUWZ60CPUSw4C6Rm8U0LfKrFq2RSwWpBEtW7_GGfDZOCj1bA"}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 03:01:43 GMT
+- request:
+    method: get
+    uri: https://api.petfinder.com/v2/organizations?name=Second%20Chance%20Dog%20Rescue
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI0NWZkZjM0MmU1YTUyYWNlYmMzMzc1MTFiMmRmZGQxYjdhY2Q4MzE2YjZlMjM2OTA3NGRhOGE0OGUxODEwYTFiMWE1MzlhNThhZmJhNTExIn0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjI0NWZkZjM0MmU1YTUyYWNlYmMzMzc1MTFiMmRmZGQxYjdhY2Q4MzE2YjZlMjM2OTA3NGRhOGE0OGUxODEwYTFiMWE1MzlhNThhZmJhNTExIiwiaWF0IjoxNTU3ODAyOTAyLCJuYmYiOjE1NTc4MDI5MDIsImV4cCI6MTU1NzgwNjUwMiwic3ViIjoiIiwic2NvcGVzIjpbXX0.IMckxEbHBSPvDSrcaji5Frbf5N9RfxvPqSk82RhkthFTtV_uR3WhpxtxubqnqgkDd--QsepKcNqHUw59bSegsHYJyNPHDPdR3elbMc3K2LNfdPJqYF_MKMwKp4qqnYN_51ysxMwaxzCgjYH_XRQ6HPg4G3AI12Kq_EPrBbBAVbVVixsR2EGJ26Gqx_sTi15xypJl8cgzuHj7SBufCqMseNb2wdjhLPKqsMErHKjV2Rj1UjMqW4TfVVc6eatFSmUsgqPCc-n7LDGSkpJBDSoBCUOSzr6RgUBWryngOtQUWZ60CPUSw4C6Rm8U0LfKrFq2RSwWpBEtW7_GGfDZOCj1bA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2235'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 03:01:46 GMT
+      X-Amzn-Requestid:
+      - 9c24fb03-75f4-11e9-b46d-61a889e168bc
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '2235'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZpxgHHf0IAMFVqQ=
+      Cache-Control:
+      - no-cache, private
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 03:01:46 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ab125581acf8fb81cf04326a31a01b39.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - VOIfEMWosG0nZnThZZQ5QIb1xsQ2PRtZC50a7Zb7Ajkc7YGtfo8Bcw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"organizations":[{"id":"IA221","name":"Second Chance DOG Rescue","email":"adoptions.scdr@gmail.com","phone":"(641)
+        297-2137","address":{"address1":"4803 Lisbon St","address2":null,"city":"Prole","state":"IA","postcode":"50229","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ia\/prole\/second-chance-dog-rescue-ia221\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":null,"mission_statement":"So
+        glad you are here! \u00a0We are a licensed 501(c)3 dog rescue. \u00a0We work
+        with shelters, other rescues, private owners...","adoption":{"policy":"Our
+        goal is to match you and a dog in such a way that both you and the dog will...","url":"http:\/\/www.secondchancedogrescueofiowa.com\/adoption-app.html"},"social_media":{"facebook":null,"twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21"}],"_links":{"self":{"href":"\/v2\/organizations\/ia221"},"animals":{"href":"\/v2\/animals?organization=ia221"}}},{"id":"KY483","name":"Second
+        Chance Dog Rescue","email":"Asecondchancedogrescue@gmail.com","phone":"(270)
+        929-0063","address":{"address1":null,"address2":null,"city":"Murray","state":"KY","postcode":"42071","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ky\/murray\/second-chance-dog-rescue-ky483\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":null,"mission_statement":"Second
+        Chance Dog Rescue is a small rescue in Murray, Ky who is dedicated to saving
+        as many animals from...","adoption":{"policy":null,"url":null},"social_media":{"facebook":"https:\/\/www.facebook.com\/Secondchancedogrescueky\/","twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/46528\/46528-1.jpg?bust=2018-06-02+00%3A16%3A47\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/46528\/46528-1.jpg?bust=2018-06-02+00%3A16%3A47\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/46528\/46528-1.jpg?bust=2018-06-02+00%3A16%3A47\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/46528\/46528-1.jpg?bust=2018-06-02+00%3A16%3A47"}],"_links":{"self":{"href":"\/v2\/organizations\/ky483"},"animals":{"href":"\/v2\/animals?organization=ky483"}}},{"id":"CT453","name":"Sarah\u0027s
+        Second Chance Dog Rescue","email":"sarahs2ndchance@yahoo.com","phone":null,"address":{"address1":null,"address2":null,"city":"Vernon","state":"CT","postcode":"06066","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ct\/vernon\/sarahs-second-chance-dog-rescue-ct453\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":"http:\/\/www.sarahs-secondchance.com","mission_statement":"Our
+        mission at Sarah\u0026#039;s Second Chance Dog Rescue is to save the lives
+        of innocent dogs that have been abandoned,...","adoption":{"policy":"SSCDR
+        focuses on rescuing dogs from the State of Connecticut. The dogs are rescued
+        from shelters and owner surrenders. We...","url":"http:\/\/docs.wixstatic.com\/ugd\/ce0a7c_10e17e939ad248b6923b758c2bb46c6b.pdf"},"social_media":{"facebook":"https:\/\/www.facebook.com\/Sarahs-Second-Chance-Dog-Rescue-177682212251888\/","twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-2.jpg?bust=2017-11-29+08%3A07%3A13\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-2.jpg?bust=2017-11-29+08%3A07%3A13\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-2.jpg?bust=2017-11-29+08%3A07%3A13\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-2.jpg?bust=2017-11-29+08%3A07%3A13"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-1.jpg?bust=2017-12-01+05%3A54%3A36\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-1.jpg?bust=2017-12-01+05%3A54%3A36\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-1.jpg?bust=2017-12-01+05%3A54%3A36\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-1.jpg?bust=2017-12-01+05%3A54%3A36"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-3.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-3.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-3.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-3.jpg?bust=2017-12-01+05%3A54%3A37"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-4.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-4.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-4.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-4.jpg?bust=2017-12-01+05%3A54%3A37"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-5.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-5.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-5.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-5.jpg?bust=2017-12-01+05%3A54%3A37"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-6.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-6.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-6.jpg?bust=2017-12-01+05%3A54%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/40542\/40542-6.jpg?bust=2017-12-01+05%3A54%3A37"}],"_links":{"self":{"href":"\/v2\/organizations\/ct453"},"animals":{"href":"\/v2\/animals?organization=ct453"}}},{"id":"CA1482","name":"Second
+        Chance Dog Rescue","email":"info@secondchancedogrescue.org","phone":"619-721-3647
+        ","address":{"address1":null,"address2":null,"city":"San Diego","state":"CA","postcode":"92102","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ca\/san-diego\/second-chance-dog-rescue-ca1482\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":null,"mission_statement":null,"adoption":{"policy":null,"url":null},"social_media":{"facebook":null,"twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[],"_links":{"self":{"href":"\/v2\/organizations\/ca1482"},"animals":{"href":"\/v2\/animals?organization=ca1482"}}},{"id":"LA392","name":"Second
+        Chance Dog Rescue LA","email":"secondchancedogrescuela@gmail.com","phone":"(225)
+        931-9157","address":{"address1":null,"address2":null,"city":"Baton Rouge","state":"LA","postcode":"70806","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/la\/baton-rouge\/second-chance-dog-rescue-la-la392\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":"https:\/\/secondchancedogrescuela.org\/","mission_statement":"Rescue.Rehab.Rehome.","adoption":{"policy":null,"url":"http:\/\/secondchancedogrescuela.org\/adopt-a-dog-2\/adoption-application\/"},"social_media":{"facebook":"https:\/\/www.facebook.com\/secondchancelouisiana\/","twitter":"https:\/\/twitter.com\/second_rescue","youtube":null,"instagram":"https:\/\/www.instagram.com\/secondchancedogrescuela\/","pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/47948\/47948-1.jpg?bust=2018-01-12+04%3A13%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/47948\/47948-1.jpg?bust=2018-01-12+04%3A13%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/47948\/47948-1.jpg?bust=2018-01-12+04%3A13%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/47948\/47948-1.jpg?bust=2018-01-12+04%3A13%3A37"}],"_links":{"self":{"href":"\/v2\/organizations\/la392"},"animals":{"href":"\/v2\/animals?organization=la392"}}},{"id":"TX1984","name":"Second
+        Chance Dog Rescue","email":"SecondChanceResQ@gmail.com","phone":null,"address":{"address1":"P
+        O Box 674","address2":null,"city":"Snyder","state":"TX","postcode":"79550","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/tx\/snyder\/second-chance-dog-rescue-tx1984\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":null,"mission_statement":"Donate
+        now via paypal!\u00a0\r\n\r\nhttps:\/\/www.paypal.me\/scdrsnyder","adoption":{"policy":"All
+        of our dogs are spayed or neutered, microchipped with a lifetime registration,
+        have had all vaccinations and heartworm tested. \u00a0...","url":"https:\/\/form.jotform.com\/80635351784158"},"social_media":{"facebook":"https:\/\/www.facebook.com\/scdrsnyder\/","twitter":null,"youtube":"https:\/\/www.youtube.com\/channel\/UC20koWtQbPMfhVdGgByMBAw\/featured","instagram":"https:\/\/www.instagram.com\/secondchanceresq\/","pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-1.jpg?bust=2018-03-05+14%3A52%3A24\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-1.jpg?bust=2018-03-05+14%3A52%3A24\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-1.jpg?bust=2018-03-05+14%3A52%3A24\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-1.jpg?bust=2018-03-05+14%3A52%3A24"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-2.jpg?bust=2018-03-05+14%3A55%3A36\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-2.jpg?bust=2018-03-05+14%3A55%3A36\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-2.jpg?bust=2018-03-05+14%3A55%3A36\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-2.jpg?bust=2018-03-05+14%3A55%3A36"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-3.jpg?bust=2018-03-05+14%3A55%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-3.jpg?bust=2018-03-05+14%3A55%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-3.jpg?bust=2018-03-05+14%3A55%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-3.jpg?bust=2018-03-05+14%3A55%3A37"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-4.jpg?bust=2018-03-05+14%3A55%3A37\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-4.jpg?bust=2018-03-05+14%3A55%3A37\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-4.jpg?bust=2018-03-05+14%3A55%3A37\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-4.jpg?bust=2018-03-05+14%3A55%3A37"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-5.jpg?bust=2018-03-05+14%3A55%3A38\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-5.jpg?bust=2018-03-05+14%3A55%3A38\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-5.jpg?bust=2018-03-05+14%3A55%3A38\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-5.jpg?bust=2018-03-05+14%3A55%3A38"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-6.jpg?bust=2018-03-05+14%3A55%3A38\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-6.jpg?bust=2018-03-05+14%3A55%3A38\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-6.jpg?bust=2018-03-05+14%3A55%3A38\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/45240\/45240-6.jpg?bust=2018-03-05+14%3A55%3A38"}],"_links":{"self":{"href":"\/v2\/organizations\/tx1984"},"animals":{"href":"\/v2\/animals?organization=tx1984"}}}],"pagination":{"count_per_page":20,"total_count":6,"current_page":1,"total_pages":1}}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 03:01:47 GMT
+recorded_with: VCR 4.0.0

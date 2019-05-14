@@ -26,13 +26,16 @@ RSpec.describe PetfinderV2::Models::Photos do
     it 'should have a small photo' do
       expect(photo.small).to_not be_nil
     end
+
     it 'should have a medium photo' do
       expect(photo.medium).to_not be_nil
     end
-    it 'shoud have a large photo' do
+
+    it 'should have a large photo' do
       expect(photo.large).to_not be_nil
     end
-    it 'shoudl have a full photo' do
+
+    it 'should have a full photo' do
       expect(photo.full).to_not be_nil
     end
   end
