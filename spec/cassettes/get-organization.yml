@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.petfinder.com/v2/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '611'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 20:17:09 GMT
+      X-Amzn-Requestid:
+      - 406947d6-7685-11e9-aee7-81b601e9a9fe
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '611'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZsJK2GN0oAMF-Zg=
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-store, private
+      Pragma:
+      - no-cache
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 20:17:09 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 604f1c33e59a82f453e462cd10d087c6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - YK0434kyDNGYuiHmaRvTmrt0zkA_v9jO1zDV3jiE2zRZIpG4HpbCew==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5IiwiaWF0IjoxNTU3ODY1MDI5LCJuYmYiOjE1NTc4NjUwMjksImV4cCI6MTU1Nzg2ODYyOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.kxVAjCWe6i0IdKVluuvZ8pLS43hHNNWOgf9ICdZ2zJEYySXYRjP2PoVEy7qZvp-BegjGGP1kz-8JElfNCuKewUkELN8fytaF5g3RYigNsV9UKkyBNk4LPGs2XG12QyxCTGUqoD-O1Tb3O_-Pu7XeevQjg9HFpiSvy_i4tr6Nuv1-dx9R-tJwgCZcfYTTHID596Hsje6qSLjlRHueWMNme-Ju-pAnn9rLIO0_ZVuOLqLs0KwtxCZmKLaqtjyyWkhHDErrfIdtQTFIkIXu7yQ2kcjY8TVCJO0X-SdCTrevCVbLcnFwHaAoRJyEP0JT7984uuQKCF_cEOynRwaxJ2AiRA"}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 20:17:09 GMT
+- request:
+    method: get
+    uri: https://api.petfinder.com/v2/organizations/IA221
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5IiwiaWF0IjoxNTU3ODY1MDI5LCJuYmYiOjE1NTc4NjUwMjksImV4cCI6MTU1Nzg2ODYyOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.kxVAjCWe6i0IdKVluuvZ8pLS43hHNNWOgf9ICdZ2zJEYySXYRjP2PoVEy7qZvp-BegjGGP1kz-8JElfNCuKewUkELN8fytaF5g3RYigNsV9UKkyBNk4LPGs2XG12QyxCTGUqoD-O1Tb3O_-Pu7XeevQjg9HFpiSvy_i4tr6Nuv1-dx9R-tJwgCZcfYTTHID596Hsje6qSLjlRHueWMNme-Ju-pAnn9rLIO0_ZVuOLqLs0KwtxCZmKLaqtjyyWkhHDErrfIdtQTFIkIXu7yQ2kcjY8TVCJO0X-SdCTrevCVbLcnFwHaAoRJyEP0JT7984uuQKCF_cEOynRwaxJ2AiRA
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '786'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 May 2019 20:17:10 GMT
+      X-Amzn-Requestid:
+      - 40ba265e-7685-11e9-9096-070e963833f4
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - ZsJK8FwtoAMFRuA=
+      Cache-Control:
+      - no-cache, private
+      X-Amzn-Remapped-Date:
+      - Tue, 14 May 2019 20:17:10 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 3245d45aedf7a8621aabe6b30d2f5a48.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 2JoPWBVd4IkGCWZAoyRUvur15A758UKcgoNJyshXIXridyPOvMogVw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"organization":{"id":"IA221","name":"Second Chance DOG Rescue","email":"adoptions.scdr@gmail.com","phone":"(641)
+        297-2137","address":{"address1":"4803 Lisbon St","address2":null,"city":"Prole","state":"IA","postcode":"50229","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ia\/prole\/second-chance-dog-rescue-ia221\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":null,"mission_statement":"So
+        glad you are here! \u00a0We are a licensed 501(c)3 dog rescue. \u00a0We work
+        with shelters, other rescues, private owners...","adoption":{"policy":"Our
+        goal is to match you and a dog in such a way that both you and the dog will...","url":"http:\/\/www.secondchancedogrescueofiowa.com\/adoption-app.html"},"social_media":{"facebook":null,"twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21"}],"_links":{"self":{"href":"\/v2\/organizations\/ia221"},"animals":{"href":"\/v2\/animals?organization=ia221"}}}}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 20:17:10 GMT
+recorded_with: VCR 4.0.0

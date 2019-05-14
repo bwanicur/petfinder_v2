@@ -1,12 +1,4 @@
 require 'json'
-require_relative 'config'
-require_relative 'services/animal_options_validator'
-require_relative 'services/organization_options_validator'
-require_relative 'requests/request'
-require_relative 'requests/access_token_request'
-require_relative 'models/access_token'
-require_relative 'models/animal'
-require_relative 'models/organization'
 
 module PetfinderV2
   class Client
@@ -31,10 +23,30 @@ module PetfinderV2
       Models::Animal.new(response_data['animal'])
     end
 
+    def get_animal_types
+      response_data = base_request(:get, 'types')
+      Models::AnimalType.process_collection(response_data)
+    end
+
+    def get_animal_type(name)
+      response_data = base_request(:get, "types/#{name}")
+      Models::AnimalType.new(response_data['type'])
+    end
+
+    def get_animal_breeds(animal_type)
+      response_data = base_request(:get, "types/#{animal_type}/breeds")
+      Models::AnimalBreed.process_collection(response_data)
+    end
+
     def search_organizations(opts = {})
       validate_organization_options!(opts)
       response_data = base_request(:get, 'organizations', opts)
       Models::Organization.process_collection(response_data)
+    end
+
+    def get_organization(id)
+      response_data = base_request(:get, "organizations/#{id}")
+      Models::Organization.new(response_data['organization'])
     end
 
     private

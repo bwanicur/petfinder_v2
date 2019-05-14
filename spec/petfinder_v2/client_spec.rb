@@ -170,4 +170,48 @@ RSpec.describe PetfinderV2::Client do
       end
     end
   end
+
+  describe 'get organization' do
+    it 'should return an organzation' do
+      VCR.use_cassette('get-organization') do
+        test_org_id = 'IA221'
+        res = client.get_organization(test_org_id)
+        expect(res).to be_a(PetfinderV2::Models::Organization)
+        expect(res.id).to eq(test_org_id)
+      end
+    end
+  end
+
+  describe 'get animal types' do
+    it 'should return a collection of animal types' do
+      VCR.use_cassette('get-animal-types') do
+        res = client.get_animal_types
+        expect(res).to be_a(Array)
+        expect(res.count).to eq(8)
+      end
+    end
+  end
+
+  describe 'get single animal type' do
+    it 'should return the type data for a single kind of animal' do
+      VCR.use_cassette('get-animal-type-by-name') do
+        res = client.get_animal_type('dog')
+        expect(res).to be_a(PetfinderV2::Models::AnimalType)
+        expect(res.name).to be
+        expect(res.link).to be
+        expect(res.breeds_link).to be
+      end
+    end
+  end
+
+  describe 'get animal breeds' do
+    it 'should return a collection of animal breeds' do
+      VCR.use_cassette('get-dog-breeds') do
+        res = client.get_animal_breeds('dog')
+        expect(res).to be_a(Array)
+        expect(res.first).to be_a(PetfinderV2::Models::AnimalBreed)
+        expect(res.size).to eq(257)
+      end
+    end
+  end
 end
