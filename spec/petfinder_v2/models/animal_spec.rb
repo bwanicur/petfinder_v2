@@ -101,10 +101,6 @@ RSpec.describe PetfinderV2::Models::Animal do
       expect(res[:animals]).to be_a(Array)
       expect(res[:animals].size).to eq(1)
       expect(res[:pagination]).to be_a(PetfinderV2::Models::Pagination)
-      expect(res[:pagination].count_per_page).to eq(1)
-      expect(res[:pagination].current_page).to eq(1)
-      expect(res[:pagination].total_count).to eq(320)
-      expect(res[:pagination].total_pages).to eq(320)
     end
   end
 
@@ -146,12 +142,7 @@ RSpec.describe PetfinderV2::Models::Animal do
 
       it 'should return a contact object' do
         contact = model.contact
-        expect(contact).to be_a(PetfinderV2::Models::Contact)
-        expect(contact.address).to be_a(PetfinderV2::Models::Address)
-        expect(contact.email).to eq('petfindertechsupport@gmail.com')
-        expect(contact.phone).to eq('555-555-5555')
-        expect(contact.address.city).to eq('Jersey City')
-        expect(contact.address.state).to eq('NJ')
+        expect(contact.class).to eq(PetfinderV2::Models::Contact)
       end
 
       it 'should return an array of photos objects' do

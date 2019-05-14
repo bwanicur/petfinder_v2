@@ -3,8 +3,6 @@ require 'faraday'
 module PetfinderV2
   module Requests
     class Request
-      @@access_token = nil
-
       BASE_URL = 'https://api.petfinder.com/v2'.freeze
 
       COLLECTION_OPTS = %i[
@@ -27,10 +25,6 @@ module PetfinderV2
         status
         type
       ].freeze
-
-      def self.reset_access_token!
-        @@access_token = nil
-      end
 
       def initialize(access_token)
         @access_token = access_token
