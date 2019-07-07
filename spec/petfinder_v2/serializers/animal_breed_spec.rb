@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Models::AnimalBreed do
+RSpec.describe PetfinderV2::Serializers::AnimalBreed do
   let(:full_response) do
     {
       'breeds' => [
@@ -37,7 +37,7 @@ RSpec.describe PetfinderV2::Models::AnimalBreed do
       res = described_class.process_collection(full_response)
       expect(res).to be_a(Array)
       expect(res.size).to eq(3)
-      expect(res.first).to be_a(PetfinderV2::Models::AnimalBreed)
+      expect(res.first).to be_a(PetfinderV2::Serializers::AnimalBreed)
     end
   end
 

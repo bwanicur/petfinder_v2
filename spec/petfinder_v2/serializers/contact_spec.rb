@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Models::Contact do
+RSpec.describe PetfinderV2::Serializers::Contact do
   let(:contact_response) do
     {
       'email' => 'petfindertechsupport@gmail.com',
@@ -28,7 +28,7 @@ RSpec.describe PetfinderV2::Models::Contact do
     end
 
     it 'should return an address object' do
-      expect(contact.address.class).to eq(PetfinderV2::Models::Address)
+      expect(contact.address.class).to eq(PetfinderV2::Serializers::Address)
     end
   end
 end

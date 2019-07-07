@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Models::Organization do
+RSpec.describe PetfinderV2::Serializers::Organization do
   let(:full_response) do
     {
       'organizations' => [
@@ -77,7 +77,7 @@ RSpec.describe PetfinderV2::Models::Organization do
   describe 'self.process_collection' do
     it 'should return a collection of Organizations and a Pagination object' do
       res = described_class.process_collection(full_response)
-      expect(res[:pagination]).to be_a(PetfinderV2::Models::Pagination)
+      expect(res[:pagination]).to be_a(PetfinderV2::Serializers::Pagination)
       expect(res[:organizations]).to be_a(Array)
       expect(res[:organizations].size).to eq(1)
     end
@@ -107,15 +107,15 @@ RSpec.describe PetfinderV2::Models::Organization do
     end
 
     it 'should have an address object' do
-      expect(model.address).to be_a(PetfinderV2::Models::Address)
+      expect(model.address).to be_a(PetfinderV2::Serializers::Address)
     end
 
     it 'should have an hours object' do
-      expect(model.hours).to be_a(PetfinderV2::Models::OrgHours)
+      expect(model.hours).to be_a(PetfinderV2::Serializers::OrgHours)
     end
 
     it 'should have an social media object' do
-      expect(model.social_media).to be_a(PetfinderV2::Models::SocialMedia)
+      expect(model.social_media).to be_a(PetfinderV2::Serializers::SocialMedia)
     end
   end
 end

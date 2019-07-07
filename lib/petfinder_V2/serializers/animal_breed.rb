@@ -1,5 +1,5 @@
 module PetfinderV2
-  module Models
+  module Serializers
     class AnimalBreed
       attr_accessor :name, :type_link
 

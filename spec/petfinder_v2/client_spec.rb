@@ -140,7 +140,7 @@ RSpec.describe PetfinderV2::Client do
       test_animal_id = 44_684_188
       VCR.use_cassette('get-animal') do
         res = client.get_animal(test_animal_id)
-        expect(res).to be_a(PetfinderV2::Models::Animal)
+        expect(res).to be_a(PetfinderV2::Serializers::Animal)
         expect(res.name).to eq('ACE')
         expect(res.age).to eq('Senior')
       end
@@ -176,7 +176,7 @@ RSpec.describe PetfinderV2::Client do
       VCR.use_cassette('get-organization') do
         test_org_id = 'IA221'
         res = client.get_organization(test_org_id)
-        expect(res).to be_a(PetfinderV2::Models::Organization)
+        expect(res).to be_a(PetfinderV2::Serializers::Organization)
         expect(res.id).to eq(test_org_id)
       end
     end
@@ -196,7 +196,7 @@ RSpec.describe PetfinderV2::Client do
     it 'should return the type data for a single kind of animal' do
       VCR.use_cassette('get-animal-type-by-name') do
         res = client.get_animal_type('dog')
-        expect(res).to be_a(PetfinderV2::Models::AnimalType)
+        expect(res).to be_a(PetfinderV2::Serializers::AnimalType)
         expect(res.name).to be
         expect(res.link).to be
         expect(res.breeds_link).to be
@@ -209,7 +209,7 @@ RSpec.describe PetfinderV2::Client do
       VCR.use_cassette('get-dog-breeds') do
         res = client.get_animal_breeds('dog')
         expect(res).to be_a(Array)
-        expect(res.first).to be_a(PetfinderV2::Models::AnimalBreed)
+        expect(res.first).to be_a(PetfinderV2::Serializers::AnimalBreed)
         expect(res.size).to eq(257)
       end
     end

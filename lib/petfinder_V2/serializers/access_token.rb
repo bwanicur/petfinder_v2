@@ -1,5 +1,5 @@
 module PetfinderV2
-  module Models
+  module Serializers
     class AccessToken
       attr_reader :token, :expires_at
       def initialize(data)

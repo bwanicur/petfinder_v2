@@ -1,5 +1,5 @@
 module PetfinderV2
-  module Models
+  module Serializers
     class Photos
       def self.process_collection(collection)
         collection.inject([]) { |mem, photos_hash| mem << new(photos_hash) }

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Models::Address do
+RSpec.describe PetfinderV2::Serializers::Address do
   let(:address_data) do
     {
       'address1' => 'Test address 1',
