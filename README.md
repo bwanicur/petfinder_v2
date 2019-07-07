@@ -22,8 +22,8 @@ Or install it yourself as-
 
 ```ruby
 # configure the client globally
-PetfinderV2::Config.set(client_id: <CLIENT_ID>)
-PetfinderV2::Config.set(client_secret: <CLIENT_SECRET>)
+PetfinderV2::Config.instance.set(client_id: <CLIENT_ID>)
+PetfinderV2::Config.instance.set(client_secret: <CLIENT_SECRET>)
 client = PetfinderV2::Client.new
 
 # or per client instance
