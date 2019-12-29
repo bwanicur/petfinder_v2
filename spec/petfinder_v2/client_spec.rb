@@ -165,7 +165,7 @@ RSpec.describe PetfinderV2::Client do
 
     it 'should  search by location' do
       VCR.use_cassette('search-organizations-by-location') do
-        res = client.search_organizations(location: '92101', distance: 5, limit: 30)
+        res = client.search_organizations(location: '92101', distance: 5)
         expect(res[:organizations].count).to eq(21)
       end
     end

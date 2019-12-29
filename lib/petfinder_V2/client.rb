@@ -65,7 +65,7 @@ module PetfinderV2
     end
 
     def validate_organization_options!(opts)
-      errors = Services::AnimalOptionsValidator.new(opts).run
+      errors = Services::OrganizationOptionsValidator.new(opts).run
       invalid_options_error!(errors)
     end
 

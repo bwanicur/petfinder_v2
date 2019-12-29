@@ -2,6 +2,7 @@ module PetfinderV2
   module Services
     class OptionsValidator
       BASE_OPTS_MAP = {
+        limit: Option.new(Integer),
         name: Option.new(String),
         distance: Option.new(Integer),
         location: Option.new(String),

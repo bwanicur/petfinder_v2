@@ -59,7 +59,7 @@ http_interactions:
   recorded_at: Tue, 14 May 2019 03:08:28 GMT
 - request:
     method: get
-    uri: https://api.petfinder.com/v2/organizations?distance=5&limit=30&location=92101
+    uri: https://api.petfinder.com/v2/organizations?distance=5&location=92101
     body:
       encoding: US-ASCII
       string: ''

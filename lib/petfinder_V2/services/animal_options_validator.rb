@@ -6,7 +6,6 @@ module PetfinderV2
     class AnimalOptionsValidator < OptionsValidator
       def my_opts
         {
-          limit: Option.new(Integer),
           breed: Option.new(String),
           color: Option.new(String),
           orgnanization: Option.new(String),
