@@ -1,3 +1,3 @@
 module PetfinderV2
-  VERSION = '0.1.2'.freeze
+  VERSION = '1.0.1'.freeze
 end
