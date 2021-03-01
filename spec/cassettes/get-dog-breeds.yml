@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.17.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,21 +23,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '607'
+      - '597'
       Connection:
       - keep-alive
       Date:
-      - Tue, 14 May 2019 21:15:28 GMT
+      - Mon, 01 Mar 2021 16:14:11 GMT
       X-Amzn-Requestid:
-      - 65a96ff5-768d-11e9-8d15-55647c376a7e
+      - 5cabe28d-32d7-426e-8a36-e7a49256ee83
+      Access-Control-Allow-Origin:
+      - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Amzn-Remapped-Content-Length:
-      - '607'
+      - '597'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - ZsRtfHeGIAMF5uA=
+      - bg_hGGavIAMF1Rw=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -45,18 +47,20 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Tue, 14 May 2019 21:15:28 GMT
+      - Mon, 01 Mar 2021 16:14:11 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 7acf1813f9ec06038d676de15fcfc28f.cloudfront.net (CloudFront)
+      - 1.1 c5d2fc4501e84a29df03002dc65dfcb5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX50-C1
       X-Amz-Cf-Id:
-      - MGkDjR-Ltol1fveDrPUhwNddR_whMWMdxrcwU5ObOQaSnzRTC6XaTQ==
+      - XTXviNqQbf9Ob5rd3g_vsLJieXBjqpnBkD9p_oceqN7zy_A2e-Id-A==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI2MjcwNTc0NzM2ZTI1M2JiYjI3OTA2OGRjOWIzMTQ1MGU1N2ZiNmI1MDkyZThjNjVhNWJhN2EzNmYwZWEyOTY1NjA1OGNmNjhlNTcwZjc3In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjI2MjcwNTc0NzM2ZTI1M2JiYjI3OTA2OGRjOWIzMTQ1MGU1N2ZiNmI1MDkyZThjNjVhNWJhN2EzNmYwZWEyOTY1NjA1OGNmNjhlNTcwZjc3IiwiaWF0IjoxNTU3ODY4NTI4LCJuYmYiOjE1NTc4Njg1MjgsImV4cCI6MTU1Nzg3MjEyOCwic3ViIjoiIiwic2NvcGVzIjpbXX0.rZT8Y56hC-9t0-_bkqPy-5MaPIdCP4Iew22d-kgMck-5THA-dmzawN8f54t6a1-dEgRhJk8RHgHWFqDUzu6Q_UN6Lh_gaCIbDs_lZwRSF6UjHhfhyAWyNbLj5D8rmZV-17mg4HFmv0vvIDDM5Cuw687hl3Hl45PseT2aDdL3krLXJzV769z4w0-RISGZ_FXk_qiZHITDqHKMInGgV80xNhxNBkIU364XakT8PchB_tD1DQwI3hzlxMRrok56ub_JJJT99Djgw1bvyGp4mGtUV5cmZfiuWLTfZOojb3wlJvDHFxLU5pyZjRYNM43ugmj6AnSfDItJMNenhM8gSfT3rA"}'
-    http_version: 
-  recorded_at: Tue, 14 May 2019 21:15:28 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjZhMjYyNjhjYmRkYTBmZjYzODk3Mjg1ODVjMTYxYmI4OWZjZTYyMDNhODI3OTk0YzU2ZGY3MzAyOWJjOTQ3ZTdiYWVjMzhjZDgwZmI4YTkyIiwiaWF0IjoxNjE0NjE1MjUxLCJuYmYiOjE2MTQ2MTUyNTEsImV4cCI6MTYxNDYxODg1MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.Kg7jFUSjE4QXfoIcIheG-PFQyy2i7a5n0bbekTApNVHa6gc5KJVqYYguRgqjJTu_NTEbg1wicetQIKDwGV2tCrYevmzLKrsRItE_zuooMuXhW3tsLphUPo3yYY60yxTBEtqjCX_pry1t5S81ssuGuCe7nIyLEpCslKW30AfPBbWqDhYRD-iJouWVSbEP9YMwOvcsdByvXqlqTXzpo5Kz5wNbdPIrGp2shfLK6k8I0wZ5gZzImn2oBBNOW9WLDiSXIXu1Fhl_xXzFSXI9MPCvcyZfxzWtKmuNBZK13ly0AnL8MtEakDfW5yV2h6bG26BFUJW00rbSUgu2mvixsQMSVA"}'
+    http_version:
+  recorded_at: Mon, 01 Mar 2021 16:14:08 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/types/dog/breeds
@@ -65,11 +69,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.17.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI2MjcwNTc0NzM2ZTI1M2JiYjI3OTA2OGRjOWIzMTQ1MGU1N2ZiNmI1MDkyZThjNjVhNWJhN2EzNmYwZWEyOTY1NjA1OGNmNjhlNTcwZjc3In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjI2MjcwNTc0NzM2ZTI1M2JiYjI3OTA2OGRjOWIzMTQ1MGU1N2ZiNmI1MDkyZThjNjVhNWJhN2EzNmYwZWEyOTY1NjA1OGNmNjhlNTcwZjc3IiwiaWF0IjoxNTU3ODY4NTI4LCJuYmYiOjE1NTc4Njg1MjgsImV4cCI6MTU1Nzg3MjEyOCwic3ViIjoiIiwic2NvcGVzIjpbXX0.rZT8Y56hC-9t0-_bkqPy-5MaPIdCP4Iew22d-kgMck-5THA-dmzawN8f54t6a1-dEgRhJk8RHgHWFqDUzu6Q_UN6Lh_gaCIbDs_lZwRSF6UjHhfhyAWyNbLj5D8rmZV-17mg4HFmv0vvIDDM5Cuw687hl3Hl45PseT2aDdL3krLXJzV769z4w0-RISGZ_FXk_qiZHITDqHKMInGgV80xNhxNBkIU364XakT8PchB_tD1DQwI3hzlxMRrok56ub_JJJT99Djgw1bvyGp4mGtUV5cmZfiuWLTfZOojb3wlJvDHFxLU5pyZjRYNM43ugmj6AnSfDItJMNenhM8gSfT3rA
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjZhMjYyNjhjYmRkYTBmZjYzODk3Mjg1ODVjMTYxYmI4OWZjZTYyMDNhODI3OTk0YzU2ZGY3MzAyOWJjOTQ3ZTdiYWVjMzhjZDgwZmI4YTkyIiwiaWF0IjoxNjE0NjE1MjUxLCJuYmYiOjE2MTQ2MTUyNTEsImV4cCI6MTYxNDYxODg1MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.Kg7jFUSjE4QXfoIcIheG-PFQyy2i7a5n0bbekTApNVHa6gc5KJVqYYguRgqjJTu_NTEbg1wicetQIKDwGV2tCrYevmzLKrsRItE_zuooMuXhW3tsLphUPo3yYY60yxTBEtqjCX_pry1t5S81ssuGuCe7nIyLEpCslKW30AfPBbWqDhYRD-iJouWVSbEP9YMwOvcsdByvXqlqTXzpo5Kz5wNbdPIrGp2shfLK6k8I0wZ5gZzImn2oBBNOW9WLDiSXIXu1Fhl_xXzFSXI9MPCvcyZfxzWtKmuNBZK13ly0AnL8MtEakDfW5yV2h6bG26BFUJW00rbSUgu2mvixsQMSVA
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -82,46 +86,50 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '2034'
+      - '2124'
       Connection:
       - keep-alive
       Date:
-      - Tue, 14 May 2019 21:15:28 GMT
+      - Mon, 01 Mar 2021 16:14:12 GMT
       X-Amzn-Requestid:
-      - 65f6f3e6-768d-11e9-b525-c705844c1213
+      - c7149e69-28ae-4324-8be2-05c45c7401e3
+      Access-Control-Allow-Origin:
+      - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Amzn-Remapped-Content-Length:
-      - '2034'
+      - '2124'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - ZsRtkHxnoAMFihA=
+      - bg_hLE0kIAMFnTg=
       Cache-Control:
       - max-age=86400, public
       X-Amzn-Remapped-Date:
-      - Tue, 14 May 2019 21:15:28 GMT
+      - Mon, 01 Mar 2021 16:14:12 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ca9fae216afadb306ee73a147fd8d410.cloudfront.net (CloudFront)
+      - 1.1 548c2d28df76d61dde347634b8c93b73.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX50-C1
       X-Amz-Cf-Id:
-      - MgPNlMPp-TDEWp5liZYXBINi_z-YnuVBjnK9vMnaqyMSHclt5wkkEQ==
+      - YHSEaXCRc0JEgHXA-KDOHoC72ODxNf00czKtss3F41byNIz4u5co8g==
     body:
       encoding: ASCII-8BIT
       string: '{"breeds":[{"name":"Affenpinscher","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Afghan
         Hound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Airedale Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Akbash","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Akita","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Alaskan
         Malamute","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
         Bulldog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
-        Eskimo Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
-        Foxhound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
+        Bully","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American Eskimo
+        Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American Foxhound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
         Hairless Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
         Staffordshire Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"American
         Water Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Anatolian
         Shepherd","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Appenzell
-        Mountain Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Australian
+        Mountain Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Aussiedoodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Australian
         Cattle Dog \/ Blue Heeler","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Australian
         Kelpie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Australian
         Shepherd","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Australian
@@ -132,7 +140,7 @@ http_interactions:
         \/ Laekenois","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Belgian
         Shepherd \/ Malinois","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Belgian
         Shepherd \/ Sheepdog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Belgian
-        Shepherd \/ Tervuren","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Bernese
+        Shepherd \/ Tervuren","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Bernedoodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Bernese
         Mountain Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Bichon
         Frise","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Black and Tan
         Coonhound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Black Labrador
@@ -151,11 +159,11 @@ http_interactions:
         Corgi","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Carolina Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Catahoula
         Leopard Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cattle
         Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Caucasian Sheepdog
-        \/ Caucasian Ovtcharka","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cavalier
-        King Charles Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chesapeake
+        \/ Caucasian Ovtcharka","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cavachon","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cavalier
+        King Charles Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cavapoo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chesapeake
         Bay Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chihuahua","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chinese
         Crested Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chinese
-        Foo Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chinook","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chocolate
+        Foo Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chinook","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chiweenie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chocolate
         Labrador Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Chow
         Chow","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cirneco dell\u0027Etna","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Clumber
         Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cockapoo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Cocker
@@ -186,7 +194,7 @@ http_interactions:
         Wirehaired Pointer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Giant
         Schnauzer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Glen of
         Imaal Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Golden
-        Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Gordon
+        Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Goldendoodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Gordon
         Setter","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Great Dane","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Great
         Pyrenees","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Greater
         Swiss Mountain Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Greyhound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Hamiltonstovare","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Harrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Havanese","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Hound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Hovawart","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Husky","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Ibizan
@@ -201,16 +209,17 @@ http_interactions:
         Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Keeshond","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Kerry
         Blue Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Kishu","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Klee
         Kai","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Komondor","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Kuvasz","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Kyi
-        Leo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Labrador Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lakeland
+        Leo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Labradoodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Labrador
+        Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lakeland
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lancashire
         Heeler","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Leonberger","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lhasa
-        Apso","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lowchen","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Maltese","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Manchester
+        Apso","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lowchen","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Lurcher","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Maltese","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Maltipoo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Manchester
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Maremma Sheepdog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Mastiff","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"McNab","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Miniature
         Bull Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Miniature
         Dachshund","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Miniature
         Pinscher","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Miniature
         Poodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Miniature
-        Schnauzer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Mixed Breed","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Mountain
+        Schnauzer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Mixed Breed","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Morkie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Mountain
         Cur","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Mountain Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Munsterlander","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Neapolitan
         Mastiff","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"New Guinea
         Singing Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Newfoundland
@@ -228,19 +237,20 @@ http_interactions:
         Basset Griffon Vendeen","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pharaoh
         Hound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pit Bull Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Plott
         Hound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pointer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Polish
-        Lowland Sheepdog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pomeranian","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Poodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Portuguese
+        Lowland Sheepdog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pomeranian","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pomsky","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Poodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Portuguese
         Podengo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Portuguese
-        Water Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Presa Canario","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pug","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Puli","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pumi","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pyrenean
+        Water Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Presa Canario","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pug","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Puggle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Puli","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pumi","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Pyrenean
         Shepherd","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Rat Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Redbone
         Coonhound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Rhodesian
         Ridgeback","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Rottweiler","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Rough
-        Collie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Saint Bernard","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Saluki","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Samoyed","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sarplaninac","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Schipperke","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Schnauzer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Scottish
+        Collie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Saint Bernard","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Saluki","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Samoyed","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sarplaninac","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Schipperke","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Schnauzer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Schnoodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Scottish
         Deerhound","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Scottish
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sealyham
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Setter","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shar-Pei","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sheep
-        Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shepherd","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shetland
+        Dog","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sheepadoodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shepherd","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shetland
         Sheepdog \/ Sheltie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shiba
-        Inu","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shih Tzu","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Siberian
+        Inu","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shih poo","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shih
+        Tzu","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Shollie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Siberian
         Husky","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Silky Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Skye
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sloughi","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Smooth
         Collie","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Smooth Fox
@@ -250,7 +260,8 @@ http_interactions:
         Italiano","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Spitz","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Staffordshire
         Bull Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Standard
         Poodle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Standard Schnauzer","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Sussex
-        Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Swedish Vallhund","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Thai
+        Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Swedish Vallhund","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Tennessee
+        Treeing Brindle","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Thai
         Ridgeback","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Tibetan
         Mastiff","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Tibetan Spaniel","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Tibetan
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Tosa Inu","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Toy
@@ -269,6 +280,6 @@ http_interactions:
         \/ Mexican Hairless","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Yellow
         Labrador Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Yorkshire
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}}]}'
-    http_version: 
-  recorded_at: Tue, 14 May 2019 21:15:28 GMT
-recorded_with: VCR 4.0.0
+    http_version:
+  recorded_at: Mon, 01 Mar 2021 16:14:09 GMT
+recorded_with: VCR 5.0.0

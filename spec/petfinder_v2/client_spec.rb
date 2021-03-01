@@ -128,6 +128,7 @@ RSpec.describe PetfinderV2::Client do
       end
 
       it 'should capture an invalid CLIENT_ID / CLIENT_SECRET request inside an exception' do
+        client = described_class.new('fake', 'fake')
         VCR.use_cassette('invalid-pf-credntials-request') do
           expect { client.search_animals(type: 'dog') }.to raise_error(PetfinderV2::Error)
         end
@@ -137,11 +138,11 @@ RSpec.describe PetfinderV2::Client do
 
   describe '#get_animal' do
     it 'should return a single animal object' do
-      test_animal_id = 44_684_188
+      test_animal_id = 50697090
       VCR.use_cassette('get-animal') do
         res = client.get_animal(test_animal_id)
         expect(res).to be_a(PetfinderV2::Serializers::Animal)
-        expect(res.name).to eq('ACE')
+        expect(res.name).to eq('Ruby')
         expect(res.age).to eq('Senior')
       end
     end
@@ -157,16 +158,16 @@ RSpec.describe PetfinderV2::Client do
     it 'should search organizations by name' do
       VCR.use_cassette('search-organizations-by-name') do
         res = client.search_organizations(name: 'Second Chance Dog Rescue')
-        expect(res[:organizations].size).to eq(6)
+        expect(res[:organizations].size).to eq(4)
         expect(res[:pagination].total_pages).to eq(1)
-        expect(res[:pagination].total_count).to eq(6)
+        expect(res[:pagination].total_count).to eq(4)
       end
     end
 
     it 'should  search by location' do
       VCR.use_cassette('search-organizations-by-location') do
         res = client.search_organizations(location: '92101', distance: 5)
-        expect(res[:organizations].count).to eq(21)
+        expect(res[:organizations].count).to eq(20)
       end
     end
   end
@@ -174,7 +175,7 @@ RSpec.describe PetfinderV2::Client do
   describe 'get organization' do
     it 'should return an organzation' do
       VCR.use_cassette('get-organization') do
-        test_org_id = 'IA221'
+        test_org_id = "LA392"
         res = client.get_organization(test_org_id)
         expect(res).to be_a(PetfinderV2::Serializers::Organization)
         expect(res.id).to eq(test_org_id)
@@ -210,7 +211,7 @@ RSpec.describe PetfinderV2::Client do
         res = client.get_animal_breeds('dog')
         expect(res).to be_a(Array)
         expect(res.first).to be_a(PetfinderV2::Serializers::AnimalBreed)
-        expect(res.size).to eq(257)
+        expect(res.size).to eq(275)
       end
     end
   end

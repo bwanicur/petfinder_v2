@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.17.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,21 +23,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '611'
+      - '604'
       Connection:
       - keep-alive
       Date:
-      - Tue, 14 May 2019 02:58:20 GMT
+      - Mon, 01 Mar 2021 16:14:04 GMT
       X-Amzn-Requestid:
-      - 219a6f98-75f4-11e9-86cd-8da10a45e07b
+      - 0bdddf64-67e2-43bb-8fbf-1969f707f9b7
+      Access-Control-Allow-Origin:
+      - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Amzn-Remapped-Content-Length:
-      - '611'
+      - '604'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - Zpw__HEKIAMFkOQ=
+      - bg_gAF-tIAMFXcg=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -45,18 +47,20 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Tue, 14 May 2019 02:58:20 GMT
+      - Mon, 01 Mar 2021 16:14:04 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 604f1c33e59a82f453e462cd10d087c6.cloudfront.net (CloudFront)
+      - 1.1 e101ff4035b08d978ef2bad970fed33c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX50-C1
       X-Amz-Cf-Id:
-      - Xy_Sj6je7-UlRj5H04aXlisi1MzRJTRs5D9LL55sXeROx_kqQ48uZg==
+      - ZHi6_URiW6hPQlf62DdYVh7F9bB-kvsW2TymGSQkgo0o-MoTxlKbzQ==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4IiwiaWF0IjoxNTU3ODAyNzAwLCJuYmYiOjE1NTc4MDI3MDAsImV4cCI6MTU1NzgwNjMwMCwic3ViIjoiIiwic2NvcGVzIjpbXX0.lwLl6vyVMaDcUV6TZUjRpgVM6Rv56rO187vy4MmczM1708Sqt_eVIWZ14ltx06oO7wGKxjoQUpS9acZaduwsOpZHmsA9vlWATmpAJ4ejfaK0NCDbEC9x-NvOeXLTN9A0VujCGjswds-Y8xYuHvtV5YAB60pJIWwW0VhcHgqMVPsm8mPu0k8br4os7rWS5ojdE93stxFf8nSk6Tf0XUREwcVjqLxLkRri9JyKjYDwUbUf7hoOfM6NRMjYAhoK_YgeBAVyATNeEWBG-DDTc_ridAs-nBuyyo5GgYpW58lvLYmaTixr5bJDhZGbhm-qWGY3Bc6mAtmmSP_73KpRqv6rCQ"}'
-    http_version: 
-  recorded_at: Tue, 14 May 2019 02:58:20 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6ImMyYjVlMjA1MDVmMDJjOTg1OTkwNDFiMWU3ZDM1MTMwNjBkYjA0OGI2ZDE2N2VmYWRlYTgwZDM3NTQwMTViZWM1NThjMjk0YzBiZmNjY2EwIiwiaWF0IjoxNjE0NjE1MjQ0LCJuYmYiOjE2MTQ2MTUyNDQsImV4cCI6MTYxNDYxODg0NCwic3ViIjoiIiwic2NvcGVzIjpbXX0.qOAuniIWKZltI28MjoE1G3E7rE8rkGuLOD2tRuDro6YXwY5tnH9bdGjyOCrRRtFi8IQk_DqZ-UWgKSTrk_OKxgXQPENmmqD8YgGTNu8XdXcuWYhU8ZlEgD48myTDR6HGf_YUns0bHrHKWqFz74xgqTaFrI06MqoO1E71F4JtEm4EIyBE1QBpkez8JwqEFRV_t0JQWa1GLBIGt6C4SwMOh7uStrIcxaCzVQUPIS83tLlSVWn8D-aV8Au7ulBaYKNZewP9jVTVBGj1ZQR_fEjF7cweq8nWdVZAG9HdsneUw9Z9GRs4aJAfrKuhSrMNjzYlqfkus5xwwexyyADcgtKU1Q"}'
+    http_version:
+  recorded_at: Mon, 01 Mar 2021 16:14:01 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/animals/124
@@ -65,11 +69,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.17.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6ImRiOTNjYTYyYzkxYzU3MzJhNDY5MTA1YzRhZjgyZWU1MmNmZjBhZDg2NDgxYmRmYTI1YmY4MjFmZWE2ZWI4YjBjOWY1ODQyMjExOWNmZTQ4IiwiaWF0IjoxNTU3ODAyNzAwLCJuYmYiOjE1NTc4MDI3MDAsImV4cCI6MTU1NzgwNjMwMCwic3ViIjoiIiwic2NvcGVzIjpbXX0.lwLl6vyVMaDcUV6TZUjRpgVM6Rv56rO187vy4MmczM1708Sqt_eVIWZ14ltx06oO7wGKxjoQUpS9acZaduwsOpZHmsA9vlWATmpAJ4ejfaK0NCDbEC9x-NvOeXLTN9A0VujCGjswds-Y8xYuHvtV5YAB60pJIWwW0VhcHgqMVPsm8mPu0k8br4os7rWS5ojdE93stxFf8nSk6Tf0XUREwcVjqLxLkRri9JyKjYDwUbUf7hoOfM6NRMjYAhoK_YgeBAVyATNeEWBG-DDTc_ridAs-nBuyyo5GgYpW58lvLYmaTixr5bJDhZGbhm-qWGY3Bc6mAtmmSP_73KpRqv6rCQ
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6ImMyYjVlMjA1MDVmMDJjOTg1OTkwNDFiMWU3ZDM1MTMwNjBkYjA0OGI2ZDE2N2VmYWRlYTgwZDM3NTQwMTViZWM1NThjMjk0YzBiZmNjY2EwIiwiaWF0IjoxNjE0NjE1MjQ0LCJuYmYiOjE2MTQ2MTUyNDQsImV4cCI6MTYxNDYxODg0NCwic3ViIjoiIiwic2NvcGVzIjpbXX0.qOAuniIWKZltI28MjoE1G3E7rE8rkGuLOD2tRuDro6YXwY5tnH9bdGjyOCrRRtFi8IQk_DqZ-UWgKSTrk_OKxgXQPENmmqD8YgGTNu8XdXcuWYhU8ZlEgD48myTDR6HGf_YUns0bHrHKWqFz74xgqTaFrI06MqoO1E71F4JtEm4EIyBE1QBpkez8JwqEFRV_t0JQWa1GLBIGt6C4SwMOh7uStrIcxaCzVQUPIS83tLlSVWn8D-aV8Au7ulBaYKNZewP9jVTVBGj1ZQR_fEjF7cweq8nWdVZAG9HdsneUw9Z9GRs4aJAfrKuhSrMNjzYlqfkus5xwwexyyADcgtKU1Q
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -86,9 +90,11 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 14 May 2019 02:58:21 GMT
+      - Mon, 01 Mar 2021 16:14:05 GMT
       X-Amzn-Requestid:
-      - 21f0a5e7-75f4-11e9-adda-61906e260386
+      - 7905faf1-56f7-4e7a-8fdf-8956cb6d00cc
+      Access-Control-Allow-Origin:
+      - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Amzn-Remapped-Content-Length:
@@ -96,21 +102,23 @@ http_interactions:
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - ZpxAFFOXoAMF2Hg=
+      - bg_gFG7roAMFdfQ=
       Cache-Control:
       - no-cache, private
       X-Amzn-Remapped-Date:
-      - Tue, 14 May 2019 02:58:21 GMT
+      - Mon, 01 Mar 2021 16:14:05 GMT
       X-Cache:
       - Error from cloudfront
       Via:
-      - 1.1 9aa63176da96af27728ba1a5368ddfdd.cloudfront.net (CloudFront)
+      - 1.1 8d9b5e8482bf535887ab85bd4a6a4830.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX50-C1
       X-Amz-Cf-Id:
-      - rnMmH3vV7O5L3wHodUMcPKRNd2nzPm7rzc3hjQGnIMDoGFKXVVk_nQ==
+      - 7OBsm734MNBRaRHhoO4zncuB8WRo9nnIZB75p_8fbCc2oUOrptF43w==
     body:
       encoding: UTF-8
       string: '{"type":"https:\/\/www.petfinder.com\/developers\/v2\/docs\/errors\/ERR-404\/","status":404,"title":"Not
         Found","detail":"Not Found"}'
-    http_version: 
-  recorded_at: Tue, 14 May 2019 02:58:21 GMT
-recorded_with: VCR 4.0.0
+    http_version:
+  recorded_at: Mon, 01 Mar 2021 16:14:02 GMT
+recorded_with: VCR 5.0.0

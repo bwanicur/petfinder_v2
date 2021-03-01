@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.17.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,21 +23,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '611'
+      - '599'
       Connection:
       - keep-alive
       Date:
-      - Tue, 14 May 2019 20:17:09 GMT
+      - Mon, 01 Mar 2021 16:23:21 GMT
       X-Amzn-Requestid:
-      - 406947d6-7685-11e9-aee7-81b601e9a9fe
+      - afce143a-a75a-41b9-bfab-de48153ebe3b
+      Access-Control-Allow-Origin:
+      - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Amzn-Remapped-Content-Length:
-      - '611'
+      - '599'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - ZsJK2GN0oAMF-Zg=
+      - bhA28GO9oAMFZtg=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -45,31 +47,33 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Tue, 14 May 2019 20:17:09 GMT
+      - Mon, 01 Mar 2021 16:23:21 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 604f1c33e59a82f453e462cd10d087c6.cloudfront.net (CloudFront)
+      - 1.1 37e37f3d71c99a5a71f8e766a6f4b9ef.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX50-C1
       X-Amz-Cf-Id:
-      - YK0434kyDNGYuiHmaRvTmrt0zkA_v9jO1zDV3jiE2zRZIpG4HpbCew==
+      - MDEu2SiarQk7iaR9Q2bq_mznNt0DYH3z6P8ldDngG5vXisSY1n6dBQ==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5IiwiaWF0IjoxNTU3ODY1MDI5LCJuYmYiOjE1NTc4NjUwMjksImV4cCI6MTU1Nzg2ODYyOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.kxVAjCWe6i0IdKVluuvZ8pLS43hHNNWOgf9ICdZ2zJEYySXYRjP2PoVEy7qZvp-BegjGGP1kz-8JElfNCuKewUkELN8fytaF5g3RYigNsV9UKkyBNk4LPGs2XG12QyxCTGUqoD-O1Tb3O_-Pu7XeevQjg9HFpiSvy_i4tr6Nuv1-dx9R-tJwgCZcfYTTHID596Hsje6qSLjlRHueWMNme-Ju-pAnn9rLIO0_ZVuOLqLs0KwtxCZmKLaqtjyyWkhHDErrfIdtQTFIkIXu7yQ2kcjY8TVCJO0X-SdCTrevCVbLcnFwHaAoRJyEP0JT7984uuQKCF_cEOynRwaxJ2AiRA"}'
-    http_version: 
-  recorded_at: Tue, 14 May 2019 20:17:09 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjcwYjZiNGFmNjM1OGQyYTE1ZTBmOWE3MTdhYjY3NzNjMDQ4NGFjM2Y2ZDk2M2Q4ZWVhMTU2Yjg5YTQ2MTRhOTQ0M2Q4NGM5OTViOWNiYjcwIiwiaWF0IjoxNjE0NjE1ODAxLCJuYmYiOjE2MTQ2MTU4MDEsImV4cCI6MTYxNDYxOTQwMSwic3ViIjoiIiwic2NvcGVzIjpbXX0.d7utPklgQlR6knIsj8JGlpoGljzfQSAoYHOoyhsUy41tgmkiBCUrVAcoRfsaEKFGgbCtwagXiAifXYSyXm141uF1jnyAiOKLho-nZSs1m98HEgWwfF-vHtiUDJmB91q_u0O252OEof6qK4nHm8sgI1GVTZ6SohW0HmOK__436cW1WI2YtWCoqbnpTflmZon_W80KpBC0wmw0SFL4ItkKK219mMjRKBCv02RnJQECzyDPULrolx73Q_RbV-h7ObP0gJnTod1fPm6o27jRKZEhPS_wCE-3nDbFfwzQBqTKD2V-x-BDaJ3NU_SFLU7dxczBwG0nnytLZk3JftiufsLBEA"}'
+    http_version:
+  recorded_at: Mon, 01 Mar 2021 16:23:17 GMT
 - request:
     method: get
-    uri: https://api.petfinder.com/v2/organizations/IA221
+    uri: https://api.petfinder.com/v2/organizations/LA392
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.17.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5In0.eyJhdWQiOiJyd01JZ3pnWUwyNnAwVFRZZGdkSTJ3OTdBdnNaNHVXNlhGc1MzWUlqS1VGU0gzcHJDMyIsImp0aSI6IjYwMDA1ZDBiODYzMTNhNTU4YjVmZWIzMjQzY2MyZGFlZDdhMjIyZGEzNDczYzliZTE4ZTU2ZWY4MTQ0ODY0OTRmNWVjOGYxZjBhMGFmMjc5IiwiaWF0IjoxNTU3ODY1MDI5LCJuYmYiOjE1NTc4NjUwMjksImV4cCI6MTU1Nzg2ODYyOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.kxVAjCWe6i0IdKVluuvZ8pLS43hHNNWOgf9ICdZ2zJEYySXYRjP2PoVEy7qZvp-BegjGGP1kz-8JElfNCuKewUkELN8fytaF5g3RYigNsV9UKkyBNk4LPGs2XG12QyxCTGUqoD-O1Tb3O_-Pu7XeevQjg9HFpiSvy_i4tr6Nuv1-dx9R-tJwgCZcfYTTHID596Hsje6qSLjlRHueWMNme-Ju-pAnn9rLIO0_ZVuOLqLs0KwtxCZmKLaqtjyyWkhHDErrfIdtQTFIkIXu7yQ2kcjY8TVCJO0X-SdCTrevCVbLcnFwHaAoRJyEP0JT7984uuQKCF_cEOynRwaxJ2AiRA
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjcwYjZiNGFmNjM1OGQyYTE1ZTBmOWE3MTdhYjY3NzNjMDQ4NGFjM2Y2ZDk2M2Q4ZWVhMTU2Yjg5YTQ2MTRhOTQ0M2Q4NGM5OTViOWNiYjcwIiwiaWF0IjoxNjE0NjE1ODAxLCJuYmYiOjE2MTQ2MTU4MDEsImV4cCI6MTYxNDYxOTQwMSwic3ViIjoiIiwic2NvcGVzIjpbXX0.d7utPklgQlR6knIsj8JGlpoGljzfQSAoYHOoyhsUy41tgmkiBCUrVAcoRfsaEKFGgbCtwagXiAifXYSyXm141uF1jnyAiOKLho-nZSs1m98HEgWwfF-vHtiUDJmB91q_u0O252OEof6qK4nHm8sgI1GVTZ6SohW0HmOK__436cW1WI2YtWCoqbnpTflmZon_W80KpBC0wmw0SFL4ItkKK219mMjRKBCv02RnJQECzyDPULrolx73Q_RbV-h7ObP0gJnTod1fPm6o27jRKZEhPS_wCE-3nDbFfwzQBqTKD2V-x-BDaJ3NU_SFLU7dxczBwG0nnytLZk3JftiufsLBEA
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -82,38 +86,41 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '786'
+      - '649'
       Connection:
       - keep-alive
       Date:
-      - Tue, 14 May 2019 20:17:10 GMT
+      - Mon, 01 Mar 2021 16:23:22 GMT
       X-Amzn-Requestid:
-      - 40ba265e-7685-11e9-9096-070e963833f4
+      - 35f449f9-50d9-43bc-bc84-02a0e3e31e23
+      Access-Control-Allow-Origin:
+      - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
+      X-Amzn-Remapped-Content-Length:
+      - '649'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - ZsJK8FwtoAMFRuA=
+      - bhA3BEDHoAMFt6A=
       Cache-Control:
       - no-cache, private
       X-Amzn-Remapped-Date:
-      - Tue, 14 May 2019 20:17:10 GMT
+      - Mon, 01 Mar 2021 16:23:22 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 3245d45aedf7a8621aabe6b30d2f5a48.cloudfront.net (CloudFront)
+      - 1.1 ccfcba4cbb8d9fd2bffd7b3d97eab98b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX50-C1
       X-Amz-Cf-Id:
-      - 2JoPWBVd4IkGCWZAoyRUvur15A758UKcgoNJyshXIXridyPOvMogVw==
+      - "-fGW7Mk5mHDd4_36g8Zwr3jLeQYuKb7YYz7rSVnU1B18XD4IO3RT7g=="
     body:
       encoding: ASCII-8BIT
-      string: '{"organization":{"id":"IA221","name":"Second Chance DOG Rescue","email":"adoptions.scdr@gmail.com","phone":"(641)
-        297-2137","address":{"address1":"4803 Lisbon St","address2":null,"city":"Prole","state":"IA","postcode":"50229","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ia\/prole\/second-chance-dog-rescue-ia221\/?referrer_id=97f97876-7585-4c77-b7df-5f9c2874e1ca","website":null,"mission_statement":"So
-        glad you are here! \u00a0We are a licensed 501(c)3 dog rescue. \u00a0We work
-        with shelters, other rescues, private owners...","adoption":{"policy":"Our
-        goal is to match you and a dog in such a way that both you and the dog will...","url":"http:\/\/www.secondchancedogrescueofiowa.com\/adoption-app.html"},"social_media":{"facebook":null,"twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-2.jpg?bust=2017-11-29+08%3A56%3A50"},{"small":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=100","medium":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=300","large":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21\u0026width=600","full":"https:\/\/s3.amazonaws.com\/petfinder-us-east-1-petimages-prod\/organization-photos\/43057\/43057-1.jpg?bust=2017-09-24+19%3A36%3A21"}],"_links":{"self":{"href":"\/v2\/organizations\/ia221"},"animals":{"href":"\/v2\/animals?organization=ia221"}}}}'
-    http_version: 
-  recorded_at: Tue, 14 May 2019 20:17:10 GMT
-recorded_with: VCR 4.0.0
+      string: '{"organization":{"id":"LA392","name":"Second Chance Dog Rescue LA","email":"secondchancedogrescuela@gmail.com","phone":"(225)
+        931-9157","address":{"address1":null,"address2":null,"city":"Baton Rouge","state":"LA","postcode":"70806","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/la\/baton-rouge\/second-chance-dog-rescue-la-la392\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","website":"https:\/\/secondchancedogrescuela.org\/","mission_statement":"Rescue.Rehab.Rehome.","adoption":{"policy":null,"url":"http:\/\/secondchancedogrescuela.org\/adopt-a-dog-2\/adoption-application\/"},"social_media":{"facebook":"https:\/\/www.facebook.com\/secondchancelouisiana\/","twitter":"https:\/\/twitter.com\/second_rescue","youtube":null,"instagram":"https:\/\/www.instagram.com\/secondchancedogrescuela\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/la392"},"animals":{"href":"\/v2\/animals?organization=la392"}}}}'
+    http_version:
+  recorded_at: Mon, 01 Mar 2021 16:23:18 GMT
+recorded_with: VCR 5.0.0
