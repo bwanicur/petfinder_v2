@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,23 +23,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '604'
+      - '607'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:20:59 GMT
+      - Wed, 06 Oct 2021 16:12:39 GMT
       X-Amzn-Requestid:
-      - 847c1f66-db1d-46fe-b37c-7629fc110c23
+      - 137c674b-e07c-4d49-b61d-ee8487ff831b
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '604'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bhAgwE1_oAMFktQ=
+      - GyymsFc-oAMFQ5g=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -47,20 +45,19 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:20:59 GMT
+      - Wed, 06 Oct 2021 16:12:39 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 b23632705a6c67f10c724554702bc08a.cloudfront.net (CloudFront)
+      - 1.1 691a8ff961a1aa9ab272aed6ca2ddafe.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - OuY6dVs8VYGsGksWL797tlO9cZLbMo1ewI349edRTcw2s6EFK2581g==
+      - W0Onbw_-tQr1V-lSo-nBwtQ1x7NxhOEF15-iSF-Jo4mvN8EVw3K5yQ==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjFmYjRmYmRhZDY2MGM0NDY0NDAxMzU4MGE5ZjVlY2VjZjY4ZWQxOWM1MTFjZDdmNmRjNTg5MWRlMzBjMzUzYzMzYzE4ZWRmNjI1YjJkNzFhIiwiaWF0IjoxNjE0NjE1NjU5LCJuYmYiOjE2MTQ2MTU2NTksImV4cCI6MTYxNDYxOTI1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.T76E6z7l8D6VOZKrtyQwPfTEDPjMobstOt1d-OgsabfEF92mvgvHyoWQ-1TDOB6oreofJ9Ph2RjqYQvLDT-8n3EMhwn6eelKA1mQOQwUqmYvupEW3o4Yu1tqB8I1RSm2VHq4vF_tS0aJMfu_sRDehqe-dUt67ReIIDqHPeBfbCU0S5Z8Srr0uFkvosbugaWeWkOkJn03v0as7wiQtT-3I7nEgv4XKbmBRGQMZ_0UoPatijiWkuDpPWO3LTX49SCYzh2bwaHVBMATAM9eX4PaiTuaMrUseAVwUG88fQ1j9U28Pc_zAvB9GZ-zwQf1dNGICjG0_yjW_1emrt1uyFl8EA"}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:20:55 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjE1Y2M0MjU0MjYxMmM0NmY4OGU4MDI2ZGNkMjIzMWVlODU1YjFmYTMwNWQwOWE3MWExZDZjYzczNWI2OGFhMzExMDk1NWIxM2ViYjZlY2U3IiwiaWF0IjoxNjMzNTM2NzU5LCJuYmYiOjE2MzM1MzY3NTksImV4cCI6MTYzMzU0MDM1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.j9vqhgZmtz-GujquYykxktFCn_wmNsFOAxMPW4M8I8ACprwaP4_mhK69HiBd9q7LGUvx1qju7vtyzqoPBoj8m2hcx99-4PeAdJlFLC8taWeiZWzg4mJFLbhWUu5OdonagD2Rf5fTI-YfYW0oLCb0Vpg-AfXkr0eLIa1V6MTrRLOyD2mXuy4xggBEyvC4sQOdN3nXLGzAVPIDNz6UioY9HoRIydchha_ywbHXzbmNuAyK1oZ2LkFiaMdUa7idJyAJB8BP1KbhtKL5P2y0H0TtldYHPyeAMOZvS0cCppPWQHtLAarDi8RyFkC9dGRRGtHy-SJUJUFC8msUjnE2mwc9jA"}'
+  recorded_at: Wed, 06 Oct 2021 16:12:38 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/animals/50697090
@@ -69,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjFmYjRmYmRhZDY2MGM0NDY0NDAxMzU4MGE5ZjVlY2VjZjY4ZWQxOWM1MTFjZDdmNmRjNTg5MWRlMzBjMzUzYzMzYzE4ZWRmNjI1YjJkNzFhIiwiaWF0IjoxNjE0NjE1NjU5LCJuYmYiOjE2MTQ2MTU2NTksImV4cCI6MTYxNDYxOTI1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.T76E6z7l8D6VOZKrtyQwPfTEDPjMobstOt1d-OgsabfEF92mvgvHyoWQ-1TDOB6oreofJ9Ph2RjqYQvLDT-8n3EMhwn6eelKA1mQOQwUqmYvupEW3o4Yu1tqB8I1RSm2VHq4vF_tS0aJMfu_sRDehqe-dUt67ReIIDqHPeBfbCU0S5Z8Srr0uFkvosbugaWeWkOkJn03v0as7wiQtT-3I7nEgv4XKbmBRGQMZ_0UoPatijiWkuDpPWO3LTX49SCYzh2bwaHVBMATAM9eX4PaiTuaMrUseAVwUG88fQ1j9U28Pc_zAvB9GZ-zwQf1dNGICjG0_yjW_1emrt1uyFl8EA
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjE1Y2M0MjU0MjYxMmM0NmY4OGU4MDI2ZGNkMjIzMWVlODU1YjFmYTMwNWQwOWE3MWExZDZjYzczNWI2OGFhMzExMDk1NWIxM2ViYjZlY2U3IiwiaWF0IjoxNjMzNTM2NzU5LCJuYmYiOjE2MzM1MzY3NTksImV4cCI6MTYzMzU0MDM1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.j9vqhgZmtz-GujquYykxktFCn_wmNsFOAxMPW4M8I8ACprwaP4_mhK69HiBd9q7LGUvx1qju7vtyzqoPBoj8m2hcx99-4PeAdJlFLC8taWeiZWzg4mJFLbhWUu5OdonagD2Rf5fTI-YfYW0oLCb0Vpg-AfXkr0eLIa1V6MTrRLOyD2mXuy4xggBEyvC4sQOdN3nXLGzAVPIDNz6UioY9HoRIydchha_ywbHXzbmNuAyK1oZ2LkFiaMdUa7idJyAJB8BP1KbhtKL5P2y0H0TtldYHPyeAMOZvS0cCppPWQHtLAarDi8RyFkC9dGRRGtHy-SJUJUFC8msUjnE2mwc9jA
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -86,44 +83,41 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '863'
+      - '957'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:20:59 GMT
+      - Wed, 06 Oct 2021 16:12:40 GMT
       X-Amzn-Requestid:
-      - 33352eef-c70a-4fa6-8e9f-e8376761dcb5
+      - ea4c14e2-56e7-4e16-abc5-400c4b64afa9
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '863'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bhAg1HoGIAMFT4A=
+      - GyymwG8cIAMFZQA=
       Cache-Control:
       - no-cache, private
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:20:59 GMT
+      - Wed, 06 Oct 2021 16:12:40 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 11959e9950ca7def87cc494a853a40f6.cloudfront.net (CloudFront)
+      - 1.1 60977766708edc6ce8219f52eb7a75ca.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - 0h8m5zDbCt2urtWxA4Pbkq4dFQxKISav3Ykg-7bpHDK4qj7wWdKrdQ==
+      - Peq45Hd9lzbXOvn8JkehymnnTnSlkdQbn15rQNP0M0kikB0x5-VL0g==
     body:
       encoding: ASCII-8BIT
-      string: '{"animal":{"id":50697090,"organization_id":"FL1026","url":"https:\/\/www.petfinder.com\/dog\/ruby-50697090\/fl\/tavares\/a-forever-home-animal-rescue-inc-fl1026\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","type":"Dog","species":"Dog","breeds":{"primary":"Chihuahua","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":"Black","secondary":"Brown
+      string: '{"animal":{"id":50697090,"organization_id":"FL1026","url":"https:\/\/www.petfinder.com\/dog\/ruby-50697090\/fl\/tavares\/a-forever-home-animal-rescue-inc-fl1026\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","type":"Dog","species":"Dog","breeds":{"primary":"Chihuahua","secondary":null,"mixed":true,"unknown":false},"colors":{"primary":"Black","secondary":"Brown
         \/ Chocolate","tertiary":null},"age":"Senior","gender":"Female","size":"Small","coat":"Short","attributes":{"spayed_neutered":true,"house_trained":true,"declawed":null,"special_needs":false,"shots_current":true},"environment":{"children":true,"dogs":true,"cats":null},"tags":[],"name":"Ruby","description":"Ruby
         is a 14 year old chihuahua mix weighing 14 pounds. Ruby is more shy and laid
-        back. She came...","organization_animal_id":null,"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175"}],"primary_photo_cropped":{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180\u0026width=300","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180\u0026width=450","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1614615180"},"videos":[],"status":"adoptable","status_changed_at":"2021-03-01T16:13:20+0000","published_at":"2021-03-01T16:13:20+0000","distance":null,"contact":{"email":"shelter-FL1026@petfinder.com","phone":null,"address":{"address1":"2950
+        back. She came...","organization_animal_id":null,"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/1\/?bust=1614615175"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1615346249\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1615346249\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1615346249\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/2\/?bust=1615346249"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/4\/?bust=1615346249\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/4\/?bust=1615346249\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/4\/?bust=1615346249\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/4\/?bust=1615346249"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/5\/?bust=1615346250\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/5\/?bust=1615346250\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/5\/?bust=1615346250\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/5\/?bust=1615346250"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/6\/?bust=1615346250\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/6\/?bust=1615346250\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/6\/?bust=1615346250\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/6\/?bust=1615346250"}],"primary_photo_cropped":{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249\u0026width=300","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249\u0026width=450","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/50697090\/3\/?bust=1615346249"},"videos":[],"status":"adopted","status_changed_at":"2021-03-14T23:37:55+0000","published_at":"2021-03-01T16:13:20+0000","distance":null,"contact":{"email":"shelter-FL1026@petfinder.com","phone":null,"address":{"address1":"2950
         CR 561","address2":null,"city":"Tavares","state":"FL","postcode":"32778","country":"US"}},"_links":{"self":{"href":"\/v2\/animals\/50697090"},"type":{"href":"\/v2\/types\/dog"},"organization":{"href":"\/v2\/organizations\/fl1026"}}}}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:20:56 GMT
-recorded_with: VCR 5.0.0
+  recorded_at: Wed, 06 Oct 2021 16:12:39 GMT
+recorded_with: VCR 6.0.0

@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,23 +23,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '600'
+      - '601'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:14:06 GMT
+      - Wed, 06 Oct 2021 16:12:41 GMT
       X-Amzn-Requestid:
-      - e597ba10-a0da-4078-9300-877153217a78
+      - 8cd940cd-0eb0-40f7-9e01-a33aee22cdad
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '600'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bg_gPFoaIAMFn1w=
+      - Gyym-GHxIAMFcXw=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -47,20 +45,19 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:14:06 GMT
+      - Wed, 06 Oct 2021 16:12:41 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 9632d1035d26081ca0b420f4e84321a9.cloudfront.net (CloudFront)
+      - 1.1 2b49f18d55a812dc358e896ccd8c6924.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - y500X4eGDN2IXxQzw_U-wvOH0RQF_ZaV2eUwIIGEFcUP4A8gMhcjiA==
+      - QehC6eR5iH4kF0VUCdIfqh2KfsMReUA3YknV9CNwAa8Ro4eGjRpL9A==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjRjNDZjNzU4MjBhZjE4MjE1ZDllMjExZjQ2MWNmOWM1NmYzMjg1MDM2MGM1YWZhMzUyNjgxODdmNDFjYjI4ZjNlNjZjZGQ2MjUxYjQzN2M2IiwiaWF0IjoxNjE0NjE1MjQ2LCJuYmYiOjE2MTQ2MTUyNDYsImV4cCI6MTYxNDYxODg0Niwic3ViIjoiIiwic2NvcGVzIjpbXX0.xIKul4_2SGVwWPJQSkHSIJKVlUH6AtPhNT8ihKvhWWTxYZjo25gHNOazsFoTAJUw5__fJVz7MKv_qv6XcuAVjM5B3yKRmD_m4AjrluCQm-_HIr4vHcq3x5UbdxKThtDH29_AFXzhDxMmpdWLBWeWveY7x4n_64b7zXeXp3CuMxqANL54ig_Eev2zoiXnof1uCTkP5RPeCR0KGL0uvzhHTXXr1a0yvSsBxFpiLX46TddajkhhnPr1puVX7A4lxAF3hQIAXZZqXa2sk8aBZeqR9mLnV5WSgFjOe9jpmbmYu0L9syxrxm78O1H9usQrOVxZq5JTUSj33bEzWaRW0D7ufw"}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:14:03 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6ImFlNTU4OGM0MjFhZDkwMjY3NDMyMzdkYzI0MWQ5OGJiMGQ2YWM0YjQ3NWJjZThlOGM1OGE3NzMzMDZjZWM3MDU1NjhiZWEzMWI1MjY2N2FlIiwiaWF0IjoxNjMzNTM2NzYxLCJuYmYiOjE2MzM1MzY3NjEsImV4cCI6MTYzMzU0MDM2MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.O0cV0qpff61bMd6Akcm5tb9ciiLrQ7BEQh5XYwFjtNlUTH0RgfkIZlnU13p3HZ2lTcJHTzjVLNppf6HZ2l_ymOr-9cIH28eLKHiNNkl8gJ6PdrEAx_sEUhrIy4DOZ3u9_lMcDK0hb1mDBQ5uJAcbOJNU9fgZ9wc0cndfDrZhw6UTlPY-ihVy3HxCdnUk7T2e_769n95-Yq1Gql98LytnjckaKrp4kok6JxN744rXO11BAhF-f1ci4wOX5hpeoIvRfYYvwCtXQ9Sj1yjtzo-_onFiroUrmdL0BBi3QDT9_fj7azR7yNmymyCLxTRrqUGikcUjMF8Ae1SSOcSaeEF8kA"}'
+  recorded_at: Wed, 06 Oct 2021 16:12:40 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/organizations?name=Second%20Chance%20Dog%20Rescue
@@ -69,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjRjNDZjNzU4MjBhZjE4MjE1ZDllMjExZjQ2MWNmOWM1NmYzMjg1MDM2MGM1YWZhMzUyNjgxODdmNDFjYjI4ZjNlNjZjZGQ2MjUxYjQzN2M2IiwiaWF0IjoxNjE0NjE1MjQ2LCJuYmYiOjE2MTQ2MTUyNDYsImV4cCI6MTYxNDYxODg0Niwic3ViIjoiIiwic2NvcGVzIjpbXX0.xIKul4_2SGVwWPJQSkHSIJKVlUH6AtPhNT8ihKvhWWTxYZjo25gHNOazsFoTAJUw5__fJVz7MKv_qv6XcuAVjM5B3yKRmD_m4AjrluCQm-_HIr4vHcq3x5UbdxKThtDH29_AFXzhDxMmpdWLBWeWveY7x4n_64b7zXeXp3CuMxqANL54ig_Eev2zoiXnof1uCTkP5RPeCR0KGL0uvzhHTXXr1a0yvSsBxFpiLX46TddajkhhnPr1puVX7A4lxAF3hQIAXZZqXa2sk8aBZeqR9mLnV5WSgFjOe9jpmbmYu0L9syxrxm78O1H9usQrOVxZq5JTUSj33bEzWaRW0D7ufw
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6ImFlNTU4OGM0MjFhZDkwMjY3NDMyMzdkYzI0MWQ5OGJiMGQ2YWM0YjQ3NWJjZThlOGM1OGE3NzMzMDZjZWM3MDU1NjhiZWEzMWI1MjY2N2FlIiwiaWF0IjoxNjMzNTM2NzYxLCJuYmYiOjE2MzM1MzY3NjEsImV4cCI6MTYzMzU0MDM2MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.O0cV0qpff61bMd6Akcm5tb9ciiLrQ7BEQh5XYwFjtNlUTH0RgfkIZlnU13p3HZ2lTcJHTzjVLNppf6HZ2l_ymOr-9cIH28eLKHiNNkl8gJ6PdrEAx_sEUhrIy4DOZ3u9_lMcDK0hb1mDBQ5uJAcbOJNU9fgZ9wc0cndfDrZhw6UTlPY-ihVy3HxCdnUk7T2e_769n95-Yq1Gql98LytnjckaKrp4kok6JxN744rXO11BAhF-f1ci4wOX5hpeoIvRfYYvwCtXQ9Sj1yjtzo-_onFiroUrmdL0BBi3QDT9_fj7azR7yNmymyCLxTRrqUGikcUjMF8Ae1SSOcSaeEF8kA
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -86,53 +83,56 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1710'
+      - '1888'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:14:07 GMT
+      - Wed, 06 Oct 2021 16:12:41 GMT
       X-Amzn-Requestid:
-      - 9e70d648-0b22-4706-ac8c-0ca6a5f9a528
+      - 71bed8d6-55ba-401a-bc7d-dc45a9e8f58e
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '1710'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bg_gUEFJoAMFmaA=
+      - GyynAGCKoAMFwfg=
       Cache-Control:
       - no-cache, private
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:14:07 GMT
+      - Wed, 06 Oct 2021 16:12:41 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d3083e588bc93f0f7e6a6449e673a5f9.cloudfront.net (CloudFront)
+      - 1.1 b23632705a6c67f10c724554702bc08a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - 0CmbcOz6jDsaLJzcHjjeJmKvmaHYMX9oG_N80O20bnnboayuCMD3Sw==
+      - 6zj7mMdhuov172WUxvI290CTdbucIIAEVX0gBcny10d9tw_B941irw==
     body:
       encoding: ASCII-8BIT
-      string: '{"organizations":[{"id":"LA392","name":"Second Chance Dog Rescue LA","email":"secondchancedogrescuela@gmail.com","phone":"(225)
-        931-9157","address":{"address1":null,"address2":null,"city":"Baton Rouge","state":"LA","postcode":"70806","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/la\/baton-rouge\/second-chance-dog-rescue-la-la392\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","website":"https:\/\/secondchancedogrescuela.org\/","mission_statement":"Rescue.Rehab.Rehome.","adoption":{"policy":null,"url":"http:\/\/secondchancedogrescuela.org\/adopt-a-dog-2\/adoption-application\/"},"social_media":{"facebook":"https:\/\/www.facebook.com\/secondchancelouisiana\/","twitter":"https:\/\/twitter.com\/second_rescue","youtube":null,"instagram":"https:\/\/www.instagram.com\/secondchancedogrescuela\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/la392"},"animals":{"href":"\/v2\/animals?organization=la392"}}},{"id":"CT453","name":"Sarah\u0027s
-        Second Chance Dog Rescue","email":"sarahs2ndchance@yahoo.com","phone":null,"address":{"address1":null,"address2":null,"city":"Vernon","state":"CT","postcode":"06066","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ct\/vernon\/sarahs-second-chance-dog-rescue-ct453\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","website":"http:\/\/www.sarahs-secondchance.com","mission_statement":"Our
+      string: '{"organizations":[{"id":"CT453","name":"Sarah\u0027s Second Chance
+        Dog Rescue","email":"sarahs2ndchance@yahoo.com","phone":null,"address":{"address1":null,"address2":null,"city":"Vernon","state":"CT","postcode":"06066","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ct\/vernon\/sarahs-second-chance-dog-rescue-ct453\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","website":"http:\/\/www.sarahs-secondchance.com","mission_statement":"Our
         mission at Sarah\u0026#039;s Second Chance Dog Rescue is to save the lives
         of innocent dogs that have been abandoned,...","adoption":{"policy":"SSCDR
         focuses on rescuing dogs from the State of Connecticut. The dogs are rescued
-        from shelters and owner surrenders. We...","url":"http:\/\/docs.wixstatic.com\/ugd\/ce0a7c_10e17e939ad248b6923b758c2bb46c6b.pdf"},"social_media":{"facebook":"https:\/\/www.facebook.com\/Sarahs-Second-Chance-Dog-Rescue-177682212251888\/","twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/ct453"},"animals":{"href":"\/v2\/animals?organization=ct453"}}},{"id":"TX1984","name":"Second
-        Chance Dog Rescue","email":"SecondChanceResQ@gmail.com","phone":null,"address":{"address1":"P
-        O Box 674","address2":null,"city":"Snyder","state":"TX","postcode":"79550","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/tx\/snyder\/second-chance-dog-rescue-tx1984\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","website":null,"mission_statement":"Donate
-        now via paypal!\u00a0\r\n\r\nhttps:\/\/www.paypal.me\/scdrsnyder","adoption":{"policy":"All
-        of our dogs are spayed or neutered, microchipped with a lifetime registration,
-        have had all vaccinations and heartworm tested. \u00a0...","url":"https:\/\/form.jotform.com\/80635351784158"},"social_media":{"facebook":"https:\/\/www.facebook.com\/scdrsnyder\/","twitter":null,"youtube":"https:\/\/www.youtube.com\/channel\/UC20koWtQbPMfhVdGgByMBAw\/featured","instagram":"https:\/\/www.instagram.com\/secondchanceresq\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/tx1984"},"animals":{"href":"\/v2\/animals?organization=tx1984"}}},{"id":"CA1482","name":"Second
+        from shelters and owner surrenders. We...","url":"http:\/\/docs.wixstatic.com\/ugd\/ce0a7c_10e17e939ad248b6923b758c2bb46c6b.pdf"},"social_media":{"facebook":"https:\/\/www.facebook.com\/Sarahs-Second-Chance-Dog-Rescue-177682212251888\/","twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/2\/?bust=1511942833"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/1\/?bust=1512107676"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/3\/?bust=1512107677"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/4\/?bust=1512107677"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/5\/?bust=1512107677"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/40542\/6\/?bust=1512107677"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/ct453"},"animals":{"href":"\/v2\/animals?organization=ct453"}}},{"id":"CA1482","name":"Second
         Chance Dog Rescue","email":"info@secondchancedogrescue.org","phone":"619-721-3647
-        ","address":{"address1":null,"address2":null,"city":"San Diego","state":"CA","postcode":"92102","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ca\/san-diego\/second-chance-dog-rescue-ca1482\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","website":null,"mission_statement":null,"adoption":{"policy":null,"url":null},"social_media":{"facebook":null,"twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/ca1482"},"animals":{"href":"\/v2\/animals?organization=ca1482"}}}],"pagination":{"count_per_page":20,"total_count":4,"current_page":1,"total_pages":1}}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:14:03 GMT
-recorded_with: VCR 5.0.0
+        ","address":{"address1":null,"address2":null,"city":"San Diego","state":"CA","postcode":"92102","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ca\/san-diego\/second-chance-dog-rescue-ca1482\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","website":null,"mission_statement":null,"adoption":{"policy":null,"url":null},"social_media":{"facebook":null,"twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/ca1482"},"animals":{"href":"\/v2\/animals?organization=ca1482"}}},{"id":"LA392","name":"Second
+        Chance Dog Rescue LA","email":"secondchancedogrescuela@gmail.com","phone":"(225)
+        931-9157","address":{"address1":null,"address2":null,"city":"Baton Rouge","state":"LA","postcode":"70806","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/la\/baton-rouge\/second-chance-dog-rescue-la-la392\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","website":"https:\/\/secondchancedogrescuela.org\/","mission_statement":"Rescue.Rehab.Rehome.","adoption":{"policy":null,"url":"http:\/\/secondchancedogrescuela.org\/adopt-a-dog-2\/adoption-application\/"},"social_media":{"facebook":"https:\/\/www.facebook.com\/secondchancelouisiana\/","twitter":"https:\/\/twitter.com\/second_rescue","youtube":null,"instagram":"https:\/\/www.instagram.com\/secondchancedogrescuela\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/la392"},"animals":{"href":"\/v2\/animals?organization=la392"}}},{"id":"KY483","name":"Second
+        Chance Dog Rescue","email":"Asecondchancedogrescue@gmail.com","phone":"(270)
+        703-7422","address":{"address1":null,"address2":null,"city":"Murray","state":"KY","postcode":"42071","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/ky\/murray\/second-chance-dog-rescue-ky483\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","website":null,"mission_statement":"Second
+        Chance Dog Rescue is a small rescue in Murray, Ky who is dedicated to saving
+        as many animals from...","adoption":{"policy":null,"url":null},"social_media":{"facebook":"https:\/\/www.facebook.com\/Secondchancedogrescueky\/","twitter":null,"youtube":null,"instagram":null,"pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/46528\/1\/?bust=1527898607\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/46528\/1\/?bust=1527898607\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/46528\/1\/?bust=1527898607\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/46528\/1\/?bust=1527898607"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/ky483"},"animals":{"href":"\/v2\/animals?organization=ky483"}}},{"id":"TX1984","name":"Second
+        Chance Dog Rescue","email":"SecondChanceResQ@gmail.com","phone":null,"address":{"address1":"P
+        O Box 674","address2":null,"city":"Snyder","state":"TX","postcode":"79550","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/tx\/snyder\/second-chance-dog-rescue-tx1984\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","website":null,"mission_statement":"Donate
+        now via paypal!\u00a0\n\nhttps:\/\/www.paypal.me\/scdrsnyder\n\nApply online
+        : https:\/\/form.jotform.com\/80635351784158","adoption":{"policy":"All of
+        our dogs are spayed or neutered, microchipped with a lifetime registration,
+        have had all vaccinations and heartworm tested. \u00a0...","url":"https:\/\/form.jotform.com\/80635351784158"},"social_media":{"facebook":"https:\/\/www.facebook.com\/scdrsnyder\/","twitter":null,"youtube":"https:\/\/www.youtube.com\/channel\/UC20koWtQbPMfhVdGgByMBAw\/featured","instagram":"https:\/\/www.instagram.com\/secondchanceresq\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/1\/?bust=1520261544"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/2\/?bust=1520261736"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/3\/?bust=1520261737"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/4\/?bust=1520261737"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/5\/?bust=1520261738"},{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/45240\/6\/?bust=1520261738"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/tx1984"},"animals":{"href":"\/v2\/animals?organization=tx1984"}}}],"pagination":{"count_per_page":20,"total_count":5,"current_page":1,"total_pages":1}}'
+  recorded_at: Wed, 06 Oct 2021 16:12:41 GMT
+recorded_with: VCR 6.0.0

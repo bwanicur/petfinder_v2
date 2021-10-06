@@ -158,16 +158,16 @@ RSpec.describe PetfinderV2::Client do
     it 'should search organizations by name' do
       VCR.use_cassette('search-organizations-by-name') do
         res = client.search_organizations(name: 'Second Chance Dog Rescue')
-        expect(res[:organizations].size).to eq(4)
+        expect(res[:organizations].size).to eq(5)
         expect(res[:pagination].total_pages).to eq(1)
-        expect(res[:pagination].total_count).to eq(4)
+        expect(res[:pagination].total_count).to eq(5)
       end
     end
 
     it 'should  search by location' do
       VCR.use_cassette('search-organizations-by-location') do
         res = client.search_organizations(location: '92101', distance: 5)
-        expect(res[:organizations].count).to eq(20)
+        expect(res[:organizations].count).to eq(17)
       end
     end
   end

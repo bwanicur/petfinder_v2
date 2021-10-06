@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,23 +23,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '602'
+      - '604'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:14:10 GMT
+      - Wed, 06 Oct 2021 16:12:45 GMT
       X-Amzn-Requestid:
-      - eae0b86e-7fa2-4320-9727-a2723b6b1e9f
+      - da0a09b8-84db-4166-88d0-f76de39da102
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '602'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bg_g8EFNoAMFevg=
+      - GyynjHADoAMFWDQ=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -47,20 +45,19 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:14:10 GMT
+      - Wed, 06 Oct 2021 16:12:45 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 c4e50e26fcbefa29d8d1be685a1f4243.cloudfront.net (CloudFront)
+      - 1.1 29d55562cdb80771afbb951b9f12a387.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - k0jGGwhBb_gHZw1DTYT2Oc1qP1SKbcuRcA6MeG___CVEbDIvXb1MCQ==
+      - Ncx4xKdSlP8paw8vX2be4Fa4bufW4KcHIzpNHk7IphQy_scZFDvbHw==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6ImJmN2Y2MDNmMTUyZjk5YzA5NmJiMTZmOWYyOGNjM2I1NTM4MWM1NDBmZTg2MDZlZTFhM2VjNzhiMDYwNGY2M2UzMGMyYTc4YTY2OWYzYTFlIiwiaWF0IjoxNjE0NjE1MjUwLCJuYmYiOjE2MTQ2MTUyNTAsImV4cCI6MTYxNDYxODg1MCwic3ViIjoiIiwic2NvcGVzIjpbXX0.F6JYMMod9bnPR2eu22gbjv_WKLYjYoPGxhw4rc5R3XyDAyk12HkeHLajjd7MHp4znpxaTCdRux-zdIroWh9KICoO4kEYIiBiLZtluT-gFHwr5uJ3IWn2bmbo6Uo85cyiWo78UWWGypa4dSQ4ttrhMA-bsT6je5961jJCPZ7G8eHyBiE7huYKy4wQettll0az5gVPdQ9iuCIEJPR4b0EDGCsaOI69b4rLP6hfxqc7JC566AuP2DXtMGzoxAb7KZj3Gc-yhyUZGTsqRp9ow3ua22AaY-LAmGHZCfqqjdwayIUEC199J5M0FbIxgGWDr_YHQC5g68msBJv9iC3qC2Tt6A"}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:14:07 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjUxZGNlMTQxMjA1ODQ0ZDc3MzdmYWQ2MDU5YjczYjI0YzQzY2RkN2EyZDMyYTIyZDc1NGNjMThhNDRmNWZmMThmMjY2YmM5MDM3YTI2NTJlIiwiaWF0IjoxNjMzNTM2NzY1LCJuYmYiOjE2MzM1MzY3NjUsImV4cCI6MTYzMzU0MDM2NSwic3ViIjoiIiwic2NvcGVzIjpbXX0.ZsLF6UNWvJKMSP_io1WShKqf_-o2-QAO_vR8DySXi51WD-kVa0EQpP7yPWwC9NTgJLytAagDIpPji2pwLOA7cG2xMcGokN4odN5EYyIlt4bDCr0H722ttoCJ6_OTvigEXqhQAFrbp9UslIPEuT6ZwnjsTq9R5AJJ-sFtx0HD0dkkj0zWq1TsBT5celiHcj-vmvyellfU6SyDpnmDPUSEpFII07f9rOxMec062ZuQddYPQIkYqONGpk7wXcRMthWmWNO2MzRugX0qiHX8BwCfEKap2mkdc_0t47CAjHkCEy4tq7NPKGbeUOv85yw-4zej4vNadeHTV9nF4iJhskJvYg"}'
+  recorded_at: Wed, 06 Oct 2021 16:12:44 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/types/dog
@@ -69,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6ImJmN2Y2MDNmMTUyZjk5YzA5NmJiMTZmOWYyOGNjM2I1NTM4MWM1NDBmZTg2MDZlZTFhM2VjNzhiMDYwNGY2M2UzMGMyYTc4YTY2OWYzYTFlIiwiaWF0IjoxNjE0NjE1MjUwLCJuYmYiOjE2MTQ2MTUyNTAsImV4cCI6MTYxNDYxODg1MCwic3ViIjoiIiwic2NvcGVzIjpbXX0.F6JYMMod9bnPR2eu22gbjv_WKLYjYoPGxhw4rc5R3XyDAyk12HkeHLajjd7MHp4znpxaTCdRux-zdIroWh9KICoO4kEYIiBiLZtluT-gFHwr5uJ3IWn2bmbo6Uo85cyiWo78UWWGypa4dSQ4ttrhMA-bsT6je5961jJCPZ7G8eHyBiE7huYKy4wQettll0az5gVPdQ9iuCIEJPR4b0EDGCsaOI69b4rLP6hfxqc7JC566AuP2DXtMGzoxAb7KZj3Gc-yhyUZGTsqRp9ow3ua22AaY-LAmGHZCfqqjdwayIUEC199J5M0FbIxgGWDr_YHQC5g68msBJv9iC3qC2Tt6A
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjUxZGNlMTQxMjA1ODQ0ZDc3MzdmYWQ2MDU5YjczYjI0YzQzY2RkN2EyZDMyYTIyZDc1NGNjMThhNDRmNWZmMThmMjY2YmM5MDM3YTI2NTJlIiwiaWF0IjoxNjMzNTM2NzY1LCJuYmYiOjE2MzM1MzY3NjUsImV4cCI6MTYzMzU0MDM2NSwic3ViIjoiIiwic2NvcGVzIjpbXX0.ZsLF6UNWvJKMSP_io1WShKqf_-o2-QAO_vR8DySXi51WD-kVa0EQpP7yPWwC9NTgJLytAagDIpPji2pwLOA7cG2xMcGokN4odN5EYyIlt4bDCr0H722ttoCJ6_OTvigEXqhQAFrbp9UslIPEuT6ZwnjsTq9R5AJJ-sFtx0HD0dkkj0zWq1TsBT5celiHcj-vmvyellfU6SyDpnmDPUSEpFII07f9rOxMec062ZuQddYPQIkYqONGpk7wXcRMthWmWNO2MzRugX0qiHX8BwCfEKap2mkdc_0t47CAjHkCEy4tq7NPKGbeUOv85yw-4zej4vNadeHTV9nF4iJhskJvYg
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -90,9 +87,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:14:11 GMT
+      - Wed, 06 Oct 2021 16:12:45 GMT
       X-Amzn-Requestid:
-      - 7c7a07ee-7ab2-4eae-bb1d-3b84aa16b052
+      - becbca03-eddb-4659-9953-0fce1c2521f2
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
@@ -100,21 +97,21 @@ http_interactions:
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bg_g_E1zoAMFrjQ=
+      - GyynnHJ0IAMFmLA=
       Cache-Control:
       - max-age=86400, public
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:14:11 GMT
+      - Wed, 06 Oct 2021 16:12:45 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 a020746e68bd200706ce55fc0d70104a.cloudfront.net (CloudFront)
+      - 1.1 056985ef6994fed9e0b1a732717cb7fa.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - TpS8_4if7VfZ6aBeCD4NUj4hYj9Q5k7OBFKAfjXqjQxXK_IPxD1hEg==
+      - ksm7WqMjSOfN7kKUp5VVnI2nKfwuUmrpqutj6Firnll31GLTTNMefw==
     body:
       encoding: ASCII-8BIT
       string: '{"type":{"name":"Dog","coats":["Hairless","Short","Medium","Long","Wire","Curly"],"colors":["Apricot
@@ -122,6 +119,5 @@ http_interactions:
         \/ Blue \/ Silver","Harlequin","Merle (Blue)","Merle (Red)","Red \/ Chestnut
         \/ Orange","Sable","Tricolor (Brown, Black, \u0026 White)","White \/ Cream","Yellow
         \/ Tan \/ Blond \/ Fawn"],"genders":["Male","Female"],"_links":{"self":{"href":"\/v2\/types\/dog"},"breeds":{"href":"\/v2\/types\/dog\/breeds"}}}}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:14:07 GMT
-recorded_with: VCR 5.0.0
+  recorded_at: Wed, 06 Oct 2021 16:12:44 GMT
+recorded_with: VCR 6.0.0

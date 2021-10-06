@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,23 +23,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '599'
+      - '606'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:23:21 GMT
+      - Wed, 06 Oct 2021 16:12:43 GMT
       X-Amzn-Requestid:
-      - afce143a-a75a-41b9-bfab-de48153ebe3b
+      - da599ffb-a9d0-496c-8834-7096d94dd748
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '599'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bhA28GO9oAMFZtg=
+      - GyynQE8aoAMFqoA=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -47,20 +45,19 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:23:21 GMT
+      - Wed, 06 Oct 2021 16:12:43 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 37e37f3d71c99a5a71f8e766a6f4b9ef.cloudfront.net (CloudFront)
+      - 1.1 92dd5512d5f290fe351674f3051d6d83.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - MDEu2SiarQk7iaR9Q2bq_mznNt0DYH3z6P8ldDngG5vXisSY1n6dBQ==
+      - MSXM-W9Df_FReTyEfMSW_eyCHi_rSGNwrSrfKKhmAI0uMD6Cq4pA7w==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjcwYjZiNGFmNjM1OGQyYTE1ZTBmOWE3MTdhYjY3NzNjMDQ4NGFjM2Y2ZDk2M2Q4ZWVhMTU2Yjg5YTQ2MTRhOTQ0M2Q4NGM5OTViOWNiYjcwIiwiaWF0IjoxNjE0NjE1ODAxLCJuYmYiOjE2MTQ2MTU4MDEsImV4cCI6MTYxNDYxOTQwMSwic3ViIjoiIiwic2NvcGVzIjpbXX0.d7utPklgQlR6knIsj8JGlpoGljzfQSAoYHOoyhsUy41tgmkiBCUrVAcoRfsaEKFGgbCtwagXiAifXYSyXm141uF1jnyAiOKLho-nZSs1m98HEgWwfF-vHtiUDJmB91q_u0O252OEof6qK4nHm8sgI1GVTZ6SohW0HmOK__436cW1WI2YtWCoqbnpTflmZon_W80KpBC0wmw0SFL4ItkKK219mMjRKBCv02RnJQECzyDPULrolx73Q_RbV-h7ObP0gJnTod1fPm6o27jRKZEhPS_wCE-3nDbFfwzQBqTKD2V-x-BDaJ3NU_SFLU7dxczBwG0nnytLZk3JftiufsLBEA"}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:23:17 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjY5MGExMTkzNzgyZDI0ZDIyMWY4MzFmMDcxMjdlOGMxZTdmODExYjRjMjAyODA4ZTRkZTNiYWMyNzBiMzJmZWMxNTU4Y2JlYWU0OTdjMWExIiwiaWF0IjoxNjMzNTM2NzYzLCJuYmYiOjE2MzM1MzY3NjMsImV4cCI6MTYzMzU0MDM2Mywic3ViIjoiIiwic2NvcGVzIjpbXX0.y86abS5SF4gdMcZfdDhVV2zmER2LES7JK-AoWwR2LIsZUygSPbhVf3toXkprqtmyNSD_U5lr7wf3spFMBuzRoaJNCZzkSBeOjTZ6i16SZlP-65bx12g3gtezvQUWR1jdrn9_ygCHZBwXpn3IE4e-FWHvzxpdvqSWsv0PFPtLGHvQvk_Pc1iRHQDnhPHaSvaeJkMpWaCapEF2YAZdLNLs-ZHrRBNtXSy_XbzOE2fVIGLwO5q28B9DVI_Vtp-LH4Xb-7gz6ZsQPACOAI-7jqN_x7KJ89kpWwJr6hnD4bPPEVWCPcl8yLJyft3SZQep6B_MTRyiEW0dhN-ON98Au1zS5A"}'
+  recorded_at: Wed, 06 Oct 2021 16:12:42 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/organizations/LA392
@@ -69,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjcwYjZiNGFmNjM1OGQyYTE1ZTBmOWE3MTdhYjY3NzNjMDQ4NGFjM2Y2ZDk2M2Q4ZWVhMTU2Yjg5YTQ2MTRhOTQ0M2Q4NGM5OTViOWNiYjcwIiwiaWF0IjoxNjE0NjE1ODAxLCJuYmYiOjE2MTQ2MTU4MDEsImV4cCI6MTYxNDYxOTQwMSwic3ViIjoiIiwic2NvcGVzIjpbXX0.d7utPklgQlR6knIsj8JGlpoGljzfQSAoYHOoyhsUy41tgmkiBCUrVAcoRfsaEKFGgbCtwagXiAifXYSyXm141uF1jnyAiOKLho-nZSs1m98HEgWwfF-vHtiUDJmB91q_u0O252OEof6qK4nHm8sgI1GVTZ6SohW0HmOK__436cW1WI2YtWCoqbnpTflmZon_W80KpBC0wmw0SFL4ItkKK219mMjRKBCv02RnJQECzyDPULrolx73Q_RbV-h7ObP0gJnTod1fPm6o27jRKZEhPS_wCE-3nDbFfwzQBqTKD2V-x-BDaJ3NU_SFLU7dxczBwG0nnytLZk3JftiufsLBEA
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjY5MGExMTkzNzgyZDI0ZDIyMWY4MzFmMDcxMjdlOGMxZTdmODExYjRjMjAyODA4ZTRkZTNiYWMyNzBiMzJmZWMxNTU4Y2JlYWU0OTdjMWExIiwiaWF0IjoxNjMzNTM2NzYzLCJuYmYiOjE2MzM1MzY3NjMsImV4cCI6MTYzMzU0MDM2Mywic3ViIjoiIiwic2NvcGVzIjpbXX0.y86abS5SF4gdMcZfdDhVV2zmER2LES7JK-AoWwR2LIsZUygSPbhVf3toXkprqtmyNSD_U5lr7wf3spFMBuzRoaJNCZzkSBeOjTZ6i16SZlP-65bx12g3gtezvQUWR1jdrn9_ygCHZBwXpn3IE4e-FWHvzxpdvqSWsv0PFPtLGHvQvk_Pc1iRHQDnhPHaSvaeJkMpWaCapEF2YAZdLNLs-ZHrRBNtXSy_XbzOE2fVIGLwO5q28B9DVI_Vtp-LH4Xb-7gz6ZsQPACOAI-7jqN_x7KJ89kpWwJr6hnD4bPPEVWCPcl8yLJyft3SZQep6B_MTRyiEW0dhN-ON98Au1zS5A
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -86,41 +83,38 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '649'
+      - '652'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:23:22 GMT
+      - Wed, 06 Oct 2021 16:12:43 GMT
       X-Amzn-Requestid:
-      - 35f449f9-50d9-43bc-bc84-02a0e3e31e23
+      - cf142a70-2cfe-46fd-87f2-ace6c9336a2d
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '649'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bhA3BEDHoAMFt6A=
+      - GyynTFw1IAMFnGA=
       Cache-Control:
       - no-cache, private
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:23:22 GMT
+      - Wed, 06 Oct 2021 16:12:43 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ccfcba4cbb8d9fd2bffd7b3d97eab98b.cloudfront.net (CloudFront)
+      - 1.1 056985ef6994fed9e0b1a732717cb7fa.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - "-fGW7Mk5mHDd4_36g8Zwr3jLeQYuKb7YYz7rSVnU1B18XD4IO3RT7g=="
+      - outskKgl0TTBpPH-T79fua6nH3UZxN4Yt5x00AenAZRWyHHtr7iB9g==
     body:
       encoding: ASCII-8BIT
       string: '{"organization":{"id":"LA392","name":"Second Chance Dog Rescue LA","email":"secondchancedogrescuela@gmail.com","phone":"(225)
-        931-9157","address":{"address1":null,"address2":null,"city":"Baton Rouge","state":"LA","postcode":"70806","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/la\/baton-rouge\/second-chance-dog-rescue-la-la392\/?referrer_id=7a08eea9-3a78-4961-9dee-b60fab4c2090","website":"https:\/\/secondchancedogrescuela.org\/","mission_statement":"Rescue.Rehab.Rehome.","adoption":{"policy":null,"url":"http:\/\/secondchancedogrescuela.org\/adopt-a-dog-2\/adoption-application\/"},"social_media":{"facebook":"https:\/\/www.facebook.com\/secondchancelouisiana\/","twitter":"https:\/\/twitter.com\/second_rescue","youtube":null,"instagram":"https:\/\/www.instagram.com\/secondchancedogrescuela\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/la392"},"animals":{"href":"\/v2\/animals?organization=la392"}}}}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:23:18 GMT
-recorded_with: VCR 5.0.0
+        931-9157","address":{"address1":null,"address2":null,"city":"Baton Rouge","state":"LA","postcode":"70806","country":"US"},"hours":{"monday":null,"tuesday":null,"wednesday":null,"thursday":null,"friday":null,"saturday":null,"sunday":null},"url":"https:\/\/www.petfinder.com\/member\/us\/la\/baton-rouge\/second-chance-dog-rescue-la-la392\/?referrer_id=60ac3753-b0b6-4ee4-a1f2-d28369ed697f","website":"https:\/\/secondchancedogrescuela.org\/","mission_statement":"Rescue.Rehab.Rehome.","adoption":{"policy":null,"url":"http:\/\/secondchancedogrescuela.org\/adopt-a-dog-2\/adoption-application\/"},"social_media":{"facebook":"https:\/\/www.facebook.com\/secondchancelouisiana\/","twitter":"https:\/\/twitter.com\/second_rescue","youtube":null,"instagram":"https:\/\/www.instagram.com\/secondchancedogrescuela\/","pinterest":null},"photos":[{"small":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=100","medium":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=300","large":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417\u0026width=600","full":"https:\/\/dl5zpyw5k3jeb.cloudfront.net\/organization-photos\/47948\/1\/?bust=1515730417"}],"distance":null,"_links":{"self":{"href":"\/v2\/organizations\/la392"},"animals":{"href":"\/v2\/animals?organization=la392"}}}}'
+  recorded_at: Wed, 06 Oct 2021 16:12:42 GMT
+recorded_with: VCR 6.0.0

@@ -8,7 +8,7 @@ http_interactions:
       string: client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -23,23 +23,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '597'
+      - '599'
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:14:11 GMT
+      - Wed, 06 Oct 2021 16:12:46 GMT
       X-Amzn-Requestid:
-      - 5cabe28d-32d7-426e-8a36-e7a49256ee83
+      - 979e73e1-3ffd-4091-8b90-82d34ed59d71
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '597'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bg_hGGavIAMF1Rw=
+      - GyynuEcvoAMF-6g=
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -47,20 +45,19 @@ http_interactions:
       Pragma:
       - no-cache
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:14:11 GMT
+      - Wed, 06 Oct 2021 16:12:46 GMT
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 c5d2fc4501e84a29df03002dc65dfcb5.cloudfront.net (CloudFront)
+      - 1.1 1e94f8bfedca9b1ad3b9259538f9432a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - XTXviNqQbf9Ob5rd3g_vsLJieXBjqpnBkD9p_oceqN7zy_A2e-Id-A==
+      - lHMcrcZQBAs1uw7g1JJ62Lg2Tn-U5p3c5as91ZSKKSKEjLxJ8QMInw==
     body:
       encoding: ASCII-8BIT
-      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjZhMjYyNjhjYmRkYTBmZjYzODk3Mjg1ODVjMTYxYmI4OWZjZTYyMDNhODI3OTk0YzU2ZGY3MzAyOWJjOTQ3ZTdiYWVjMzhjZDgwZmI4YTkyIiwiaWF0IjoxNjE0NjE1MjUxLCJuYmYiOjE2MTQ2MTUyNTEsImV4cCI6MTYxNDYxODg1MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.Kg7jFUSjE4QXfoIcIheG-PFQyy2i7a5n0bbekTApNVHa6gc5KJVqYYguRgqjJTu_NTEbg1wicetQIKDwGV2tCrYevmzLKrsRItE_zuooMuXhW3tsLphUPo3yYY60yxTBEtqjCX_pry1t5S81ssuGuCe7nIyLEpCslKW30AfPBbWqDhYRD-iJouWVSbEP9YMwOvcsdByvXqlqTXzpo5Kz5wNbdPIrGp2shfLK6k8I0wZ5gZzImn2oBBNOW9WLDiSXIXu1Fhl_xXzFSXI9MPCvcyZfxzWtKmuNBZK13ly0AnL8MtEakDfW5yV2h6bG26BFUJW00rbSUgu2mvixsQMSVA"}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:14:08 GMT
+      string: '{"token_type":"Bearer","expires_in":3600,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjE2NDM3ZjJlOGY1NWI2NmQzMjkwYTU2NTI3MjYzNjM3YzM4Y2ViNWMxY2NhYjIyOTZjM2Q4MGU3MDRhODYwOTc4ZjlhNGE0ZmU2YjkyNmVmIiwiaWF0IjoxNjMzNTM2NzY2LCJuYmYiOjE2MzM1MzY3NjYsImV4cCI6MTYzMzU0MDM2Niwic3ViIjoiIiwic2NvcGVzIjpbXX0.Y2YDssaqWDGTCaa6VQ4a1d9ccxaThjeGxKf6Yaof-PmwSodD2rdz3cOUBlmcdIEqZEMdEu6D6VCY4jTq-TfbOdf3ccTevmaMUogdYAZmJO_S937y4cM19Nh8vvdV1haTlcheB_HCSAfUQNs1gLyz0HLN10wE9ibDagxguzaxbicDNDJRgACVAYHLmQ6aX9tw_iu0emn5xt0fEmjPNACSbcBMJwyDr7_q9py_lpVv1h4gdYqRYl-YttSp4Bv1AsJoXUKWfPewK3H_ZB8RXT9C-fgX7wC8HVhh_RelxLH-nWMNYcmwbGgdupl2FeaQGDrHncugBNDczCul0faLoBNFZw"}'
+  recorded_at: Wed, 06 Oct 2021 16:12:45 GMT
 - request:
     method: get
     uri: https://api.petfinder.com/v2/types/dog/breeds
@@ -69,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.17.1
+      - Faraday v1.0.1
       Content-Type:
       - application/json
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0dG5JTTZ2ZVBicnBxSjhxQkdZMmNvOVpCU2pmcEF3Yjg0Tzc0NWZ4UmQwUG41ZmUzaCIsImp0aSI6IjZhMjYyNjhjYmRkYTBmZjYzODk3Mjg1ODVjMTYxYmI4OWZjZTYyMDNhODI3OTk0YzU2ZGY3MzAyOWJjOTQ3ZTdiYWVjMzhjZDgwZmI4YTkyIiwiaWF0IjoxNjE0NjE1MjUxLCJuYmYiOjE2MTQ2MTUyNTEsImV4cCI6MTYxNDYxODg1MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.Kg7jFUSjE4QXfoIcIheG-PFQyy2i7a5n0bbekTApNVHa6gc5KJVqYYguRgqjJTu_NTEbg1wicetQIKDwGV2tCrYevmzLKrsRItE_zuooMuXhW3tsLphUPo3yYY60yxTBEtqjCX_pry1t5S81ssuGuCe7nIyLEpCslKW30AfPBbWqDhYRD-iJouWVSbEP9YMwOvcsdByvXqlqTXzpo5Kz5wNbdPIrGp2shfLK6k8I0wZ5gZzImn2oBBNOW9WLDiSXIXu1Fhl_xXzFSXI9MPCvcyZfxzWtKmuNBZK13ly0AnL8MtEakDfW5yV2h6bG26BFUJW00rbSUgu2mvixsQMSVA
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2clFzcHIzTng1NjloM1hrR3V4aUJobFNlRUFCUkxxSFVNeEc5bmdaQ2hLTzQ1SFcwYSIsImp0aSI6IjE2NDM3ZjJlOGY1NWI2NmQzMjkwYTU2NTI3MjYzNjM3YzM4Y2ViNWMxY2NhYjIyOTZjM2Q4MGU3MDRhODYwOTc4ZjlhNGE0ZmU2YjkyNmVmIiwiaWF0IjoxNjMzNTM2NzY2LCJuYmYiOjE2MzM1MzY3NjYsImV4cCI6MTYzMzU0MDM2Niwic3ViIjoiIiwic2NvcGVzIjpbXX0.Y2YDssaqWDGTCaa6VQ4a1d9ccxaThjeGxKf6Yaof-PmwSodD2rdz3cOUBlmcdIEqZEMdEu6D6VCY4jTq-TfbOdf3ccTevmaMUogdYAZmJO_S937y4cM19Nh8vvdV1haTlcheB_HCSAfUQNs1gLyz0HLN10wE9ibDagxguzaxbicDNDJRgACVAYHLmQ6aX9tw_iu0emn5xt0fEmjPNACSbcBMJwyDr7_q9py_lpVv1h4gdYqRYl-YttSp4Bv1AsJoXUKWfPewK3H_ZB8RXT9C-fgX7wC8HVhh_RelxLH-nWMNYcmwbGgdupl2FeaQGDrHncugBNDczCul0faLoBNFZw
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -90,33 +87,31 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 01 Mar 2021 16:14:12 GMT
+      - Wed, 06 Oct 2021 16:12:46 GMT
       X-Amzn-Requestid:
-      - c7149e69-28ae-4324-8be2-05c45c7401e3
+      - 32025daa-1b77-492e-b037-267c330d71cb
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
-      X-Amzn-Remapped-Content-Length:
-      - '2124'
       X-Amzn-Remapped-Connection:
       - keep-alive
       X-Amz-Apigw-Id:
-      - bg_hLE0kIAMFnTg=
+      - GyynxE86oAMF3Gg=
       Cache-Control:
       - max-age=86400, public
       X-Amzn-Remapped-Date:
-      - Mon, 01 Mar 2021 16:14:12 GMT
+      - Wed, 06 Oct 2021 16:12:46 GMT
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 548c2d28df76d61dde347634b8c93b73.cloudfront.net (CloudFront)
+      - 1.1 8d457183fa243dba1db74aa77399e24b.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - LAX50-C1
       X-Amz-Cf-Id:
-      - YHSEaXCRc0JEgHXA-KDOHoC72ODxNf00czKtss3F41byNIz4u5co8g==
+      - K0D1dt6t3Z9M50dO9zC1PaA6xt5YJjEnFGHzcuT6y4xc3qos3CCjUA==
     body:
       encoding: ASCII-8BIT
       string: '{"breeds":[{"name":"Affenpinscher","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Afghan
@@ -280,6 +275,5 @@ http_interactions:
         \/ Mexican Hairless","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Yellow
         Labrador Retriever","_links":{"type":{"href":"\/v2\/types\/dog"}}},{"name":"Yorkshire
         Terrier","_links":{"type":{"href":"\/v2\/types\/dog"}}}]}'
-    http_version:
-  recorded_at: Mon, 01 Mar 2021 16:14:09 GMT
-recorded_with: VCR 5.0.0
+  recorded_at: Wed, 06 Oct 2021 16:12:45 GMT
+recorded_with: VCR 6.0.0
