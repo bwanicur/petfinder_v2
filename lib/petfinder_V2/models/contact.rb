@@ -1,7 +1,7 @@
 require_relative 'address'
 
 module PetfinderV2
-  module Serializers
+  module Models
     class Contact
       attr_reader :phone, :email
       def initialize(data)

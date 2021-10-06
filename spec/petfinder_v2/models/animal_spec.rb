@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Serializers::Animal do
+RSpec.describe PetfinderV2::Models::Animal do
   let(:full_response) do
     {
       'animals' => [
@@ -100,7 +100,7 @@ RSpec.describe PetfinderV2::Serializers::Animal do
       res = described_class.process_collection(full_response)
       expect(res[:animals]).to be_a(Array)
       expect(res[:animals].size).to eq(1)
-      expect(res[:pagination]).to be_a(PetfinderV2::Serializers::Pagination)
+      expect(res[:pagination]).to be_a(PetfinderV2::Models::Pagination)
     end
   end
 
@@ -134,7 +134,7 @@ RSpec.describe PetfinderV2::Serializers::Animal do
     describe 'custom atts' do
       it 'should return a breeds object' do
         breeds_obj = model.breeds
-        expect(breeds_obj).to be_a(PetfinderV2::Serializers::Breed)
+        expect(breeds_obj).to be_a(PetfinderV2::Models::Breed)
         expect(breeds_obj.primary).to eq('American Shorthair')
         expect(breeds_obj.secondary).to be_nil
         expect(breeds_obj.mixed).to eq(false)
@@ -143,7 +143,7 @@ RSpec.describe PetfinderV2::Serializers::Animal do
 
       it 'should return a contact object' do
         contact = model.contact
-        expect(contact.class).to eq(PetfinderV2::Serializers::Contact)
+        expect(contact.class).to eq(PetfinderV2::Models::Contact)
       end
 
       it 'should return an array of photos objects' do

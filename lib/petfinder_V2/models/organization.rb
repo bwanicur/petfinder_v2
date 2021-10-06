@@ -3,7 +3,7 @@ require_relative 'photos'
 require_relative 'pagination'
 
 module PetfinderV2
-  module Serializers
+  module Models
     class SocialMedia
       attr_reader :facebook, :twitter, :youtube, :instagram, :pinterest
       def initialize(data)
@@ -31,7 +31,7 @@ module PetfinderV2
     class Organization
       def self.process_collection(data)
         {
-          pagination: PetfinderV2::Serializers::Pagination.new(data['pagination']),
+          pagination: PetfinderV2::Models::Pagination.new(data['pagination']),
           organizations: data['organizations'].map { |o| new(o) }
         }
       end

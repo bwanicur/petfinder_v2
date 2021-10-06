@@ -15,38 +15,38 @@ module PetfinderV2
     def search_animals(opts = {})
       validate_animal_options!(opts)
       response_data = base_request(:get, 'animals', opts)
-      Serializers::Animal.process_collection(response_data)
+      Models::Animal.process_collection(response_data)
     end
 
     def get_animal(id)
       response_data = base_request(:get, "animals/#{id}")
-      Serializers::Animal.new(response_data['animal'])
+      Models::Animal.new(response_data['animal'])
     end
 
     def get_animal_types
       response_data = base_request(:get, 'types')
-      Serializers::AnimalType.process_collection(response_data)
+      Models::AnimalType.process_collection(response_data)
     end
 
     def get_animal_type(name)
       response_data = base_request(:get, "types/#{name}")
-      Serializers::AnimalType.new(response_data['type'])
+      Models::AnimalType.new(response_data['type'])
     end
 
     def get_animal_breeds(animal_type)
       response_data = base_request(:get, "types/#{animal_type}/breeds")
-      Serializers::AnimalBreed.process_collection(response_data)
+      Models::AnimalBreed.process_collection(response_data)
     end
 
     def search_organizations(opts = {})
       validate_organization_options!(opts)
       response_data = base_request(:get, 'organizations', opts)
-      Serializers::Organization.process_collection(response_data)
+      Models::Organization.process_collection(response_data)
     end
 
     def get_organization(id)
       response_data = base_request(:get, "organizations/#{id}")
-      Serializers::Organization.new(response_data['organization'])
+      Models::Organization.new(response_data['organization'])
     end
 
     private
@@ -101,7 +101,7 @@ module PetfinderV2
       ).get_access_token
       response_data = JSON.parse(res.body)
       handle_errors!(response_data)
-      Serializers::AccessToken.new(response_data)
+      Models::AccessToken.new(response_data)
     end
   end
 end

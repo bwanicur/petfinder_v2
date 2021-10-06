@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Serializers::Pagination do
+RSpec.describe PetfinderV2::Models::Pagination do
   let(:pagination_response) do
     {
       'count_per_page' => 1,

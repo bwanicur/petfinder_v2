@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Serializers::AnimalType do
+RSpec.describe PetfinderV2::Models::AnimalType do
   let(:full_response) do
     {
       'types' => [

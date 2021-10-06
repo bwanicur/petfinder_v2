@@ -1,5 +1,5 @@
 module PetfinderV2
-  module Serializers
+  module Models
     class AnimalType
       attr_reader :name, :colors, :genders, :link, :breeds_link
 

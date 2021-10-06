@@ -3,7 +3,7 @@ require_relative 'contact'
 require_relative 'photos'
 
 module PetfinderV2
-  module Serializers
+  module Models
     class Breed
       attr_reader :primary, :secondary, :mixed, :unknown
       def initialize(data)
@@ -25,7 +25,7 @@ module PetfinderV2
 
       def self.process_collection(data)
         {
-          pagination: PetfinderV2::Serializers::Pagination.new(data['pagination']),
+          pagination: PetfinderV2::Models::Pagination.new(data['pagination']),
           animals: data['animals'].map { |d| new(d) }
         }
       end

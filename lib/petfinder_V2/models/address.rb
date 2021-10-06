@@ -1,5 +1,5 @@
 module PetfinderV2
-  module Serializers
+  module Models
     class Address
       attr_reader :address1, :address2, :city, :state, :postcode, :country
 

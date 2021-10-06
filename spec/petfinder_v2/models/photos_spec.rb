@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PetfinderV2::Serializers::Photos do
+RSpec.describe PetfinderV2::Models::Photos do
   let(:photos_data) do
     [
       {

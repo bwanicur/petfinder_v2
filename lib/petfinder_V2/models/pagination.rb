@@ -1,5 +1,5 @@
 module PetfinderV2
-  module Serializers
+  module Models
     class Pagination
       attr_reader :count_per_page,
                   :total_count,
