@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    petfinder_V2 (1.0.1)
+    petfinder_V2 (1.0.2)
       faraday
       json
 
